@@ -1,0 +1,56 @@
+@media screen and (max-width: 1540px) {
+    
+    .box_connection{
+        transform: translate(0, 25%) ;
+        width: 60%;
+    }
+
+    .FondFooter{
+        position:fixed;
+        bottom: 0px;
+    }
+
+    .contentBarreAnimation{
+        left: 28%;
+        bottom: -40px;
+    }
+
+    .barre1, .barre2, .barre3, .barre4, .barre5, .barre6, .barre7{
+        display: none;
+    }
+
+    .barre32, .barre33, .barre34, .barre35, .barre36, .barre37, .barre38{
+        display: none;
+    }
+
+    .Shadow1, .Shadow2, .Shadow3, .Shadow4, .Shadow5, .Shadow6, .Shadow7{
+        display: none;
+    }
+
+    .Shadow32, .Shadow33, .Shadow34, .Shadow35, .Shadow36, .Shadow37, .Shadow38{
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 1024px) {
+
+    .box_connection{
+        transform: translate(0, 10%) ;
+        width: 70%;
+    }
+
+    .FondFooter{
+        position:initial;
+        bottom: 0px;
+    }
+
+    .conteneur{
+        display: none;
+    }
+
+    .conteneurShadow{
+        display: none;
+    }
+
+}

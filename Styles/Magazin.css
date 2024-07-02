@@ -1,0 +1,105 @@
+.shopMenu{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+}
+button{
+    font-family: "Anta", sans-serif;
+    font-weight: 400;
+    font-style: normal; 
+    font-size: 2em; 
+    color: rgb(255, 196, 0);
+}
+
+.menuChoix{
+    height: 50px;
+    width: 220px;
+    background-color: rgba(128, 128, 128, 0.2);
+    border-radius: 7px;
+    margin-top: 30px;
+    text-align: center;
+    transition-duration: 300ms;
+}
+
+.menuChoix:hover{
+    box-shadow: 0 0 2px 1px darkgoldenrod;
+    transform: scale(1.05);
+}
+
+.choixShop{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.choixShopts{
+    display: none;
+}
+
+.choix_1{
+    display: flex;
+    justify-content: space-around;
+}
+.choix_2{
+    display: flex;
+    justify-content: center;
+}
+
+
+table{
+    border-collapse: collapse ;
+    margin: auto;
+    margin-top: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-family: "Anta", sans-serif;
+    font-style: normal; 
+
+}
+
+h2{
+    text-align: center;
+    padding: 20px;
+    font-family: "Anta", sans-serif;
+    font-style: normal; 
+    color: rgb(255, 196, 0);
+    font-weight: 800;
+    font-size: 4em; 
+}
+
+th, tr, td{
+    border: 1px solid darkgoldenrod;
+    padding: 15px;
+}
+
+th{
+    margin-left: 15px;
+    font-weight: 400;
+    font-size: 2em;
+    color: rgb(255, 196, 0);
+}
+td{
+    margin-left: 15px;
+    font-weight: 100;
+    font-size: 1.1em;
+    color: deepskyblue;
+}
+
+.tr img{
+    width: 30px;
+}
+td img{
+    width: 20px;
+}
+
+@media screen and (max-width: 1024px){
+
+    .choix_1, .choix_2{
+        justify-content: center;
+        flex-direction: column;
+
+    }
+}

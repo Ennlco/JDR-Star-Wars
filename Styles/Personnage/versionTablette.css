@@ -1,0 +1,30 @@
+@media screen and (max-width: 1024px){
+
+    .enTete{
+        gap: 5px;
+    }
+
+    .ChampSpecialite{
+        width: 90%;
+    }
+
+    .competence{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+
+    .equipement, .pouvoir, .Arme{
+        margin-top: 50px;
+    }
+
+    .equipement{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+

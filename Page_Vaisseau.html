@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8" />
+        <title>JDR Star Wars Vaisseau</title>
+        <link rel="stylesheet" href="Styles/Style.css">
+        <link rel="stylesheet" href="Styles/Vaisseau.css">
+        <link rel="stylesheet" href="Styles/Navigation_Menu.css">
+        <link rel="stylesheet" href="Styles/Barre_Animation.css">
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Anta&display=swap" rel="stylesheet">
+
+        <script src="JavaScript/Vaisseau/Vaisseau.js" defer></script>
+
+    </head>
+    <body>
+        <header>
+            <nav class="navigation">
+                <a href="Page_Accueil.html" ><img src="Ressource/Image/Picto/Picto_Accueil.png" alt="Pictogramme menu accueil" class="navigationImage"></a>
+                <a href="Page_Personnage.html"><img src="Ressource/Image/Picto/Picto_Personnage.png" alt="Pictogramme menu personnage" class="navigationImage"></a>
+                <a href="Page_Vaisseau.html"><img src="Ressource/Image/Picto/Picto_Vaisseau.png" alt="Pictogramme menu vaisseau" class="navigationImage"></a>
+                <a href="Page_Carte.html"><img src="Ressource/Image/Picto/Picto_Carte.png" alt="Pictogramme menu carte" class="navigationImage"></a>
+                <a href="Page_Magazin.html"><img src="Ressource/Image/Picto/Picto_Magazin.png" alt="Pictogramme menu magazin" class="navigationImage"></a>
+                <a href="Page_Codex.html"><img src="Ressource/Image/Picto/Picto_Codex.png" alt="Pictogramme menu codex" class="navigationImage"></a>
+            </nav>
+            <div>
+                <img src="Ressource/Image/HeadertNav_Fond.png" alt="En tête navigation Star Wars" class="fondNav">
+            </div>
+        </header>
+
+        <main>
+            <section class="vueGlobal">
+                <div>
+                    <div class="contourZone">
+                    <img src="Ressource/Image/Vaisseau/ChambreKin.png" alt="Chambre kin" class="vaisseauZone Kin" id="kinSelection">
+                    <p>Chambre de Kin</p>
+                    </div>
+                    <div class="contourZone">
+                    <img src="Ressource/Image/Vaisseau/ChambreLizan.png" alt="Chambre de Lizan" class="vaisseauZone Lizan"  id="lizanSelection">
+                    <p>Chambre de lizân</p>
+                    </div>
+                    <div class="contourZone">
+                    <img src="Ressource/Image/Vaisseau/Reacteur.png" alt="Reacteur" class="vaisseauZone Reacteur"  id="reacteurSelection">
+                    <p>Réacteur du vaisseau <br> et chambre de 4M</p>
+                    </div>
+                    <div class="contourZone">
+                    <img src="Ressource/Image/Vaisseau/ZoneCommune.png" alt="Zone Commune" class="vaisseauZone Commune"  id="communeSelection">
+                    <p>Zone de vie commune et chambre de Alourra</p>
+                    </div>
+                </div>
+                <div>
+                    <img src="Ressource/Image/Vaisseau/VaisseauGlobal.jpg" alt="intérieur Vaisseau cargo" class="carteVaisseau">
+                    <img src="Ressource/Image/Vaisseau/ChambreKinSelection.png" alt="Chambre Kin Selection" class="kinSelection">
+                    <img src="Ressource/Image/Vaisseau/ChambreLizanSelection.png" alt="Chambre Lizân Selection" class="lizanSelection">
+                    <img src="Ressource/Image/Vaisseau/ReacteurSelection.png" alt="Zone Réacteur Selection" class="reacteurSelection">
+                    <img src="Ressource/Image/Vaisseau/ZoneCommuneSelection.png" alt="Zone Commune Selection" class="communeSelection">
+                    <img src="Ressource/Image/Vaisseau/ZonesStockageSelection.png" alt="Zone Stockage Selection" class="stockageSelection">
+                    <img src="Ressource/Image/Vaisseau/LieuReunionSelection.png" alt="Lieu Réunion Selection" class="reunionSelection">
+                    <img src="Ressource/Image/Vaisseau/ZoneMedicaleSelection.png" alt="Baie Médicale Selection" class="medicaleSelection">
+                    <img src="Ressource/Image/Vaisseau/CocpitePilotageSelection.png" alt="Cocpite Pilotage Selection" class="pilotageSelection">
+                </div>
+                <div>
+                    <div class="contourZone">
+                    <img src="Ressource/Image/Vaisseau/ZonesStockage.png" alt="Stockage" class="vaisseauZone Stockage"  id="stockageSelection">
+                    <p>Zone de stockage du vaisseau et chmabre de Nix</p>
+                    </div>
+                    <div class="contourZone">
+                    <img src="Ressource/Image/Vaisseau/LieuReunion.png" alt="Lieu de réunion" class="vaisseauZone Reunion"  id="reunionSelection">
+                    <p>Lieu de réunion du vaisseau</p>
+                    </div>
+                    <div class="contourZone">
+                    <img src="Ressource/Image/Vaisseau/ZoneMedicale.png" alt="Baie médicale" class="vaisseauZone Medicale"  id="medicaleSelection">
+                    <p>Baie médicale du vaisseau</p>
+                    </div>
+                    <div class="contourZone">
+                    <img src="Ressource/Image/Vaisseau/CocpitePilotage.png" alt="Cocpite" class="vaisseauZone Pilotage"  id="pilotageSelection">
+                    <p>Cocpite du vaisseau</p>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="inventaireVaisseau">
+                    <h2>Meuble Vaisseau</h2>
+                    <textarea name="inventaireVaisseau" id="inventaireVaisseau" cols="80" rows="10"></textarea>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="FondFooter">
+                <img src="Ressource/Image/Footer_Fond.png" alt="Bas de Page Star Wars">
+            </div>
+        </footer>
+
+    </body>
+</html>

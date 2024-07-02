@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8" />
+        <title>JDR Star Wars Magazin</title>
+        <link rel="stylesheet" href="Styles/Style.css" />
+        <link rel="stylesheet" href="Styles/Navigation_Menu.css">
+        <link rel="stylesheet" href="Styles/Barre_Animation.css">
+        <link rel="stylesheet" href="Styles/Magazin.css">
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Anta&display=swap" rel="stylesheet">
+
+        <script src="JavaScript/Magazin/tableau_shop.js" defer></script>
+        <script src="JavaScript/Magazin/generation_Tableau_Shop.js" defer></script>
+        <script src="JavaScript/Magazin/Magazin.js" defer></script>
+
+    </head>
+    <body>
+        <header>
+            <nav class="navigation">
+                <a href="Page_Accueil.html" ><img src="Ressource/Image/Picto/Picto_Accueil.png" alt="Pictogramme menu accueil" class="navigationImage"></a>
+                <a href="Page_Personnage.html"><img src="Ressource/Image/Picto/Picto_Personnage.png" alt="Pictogramme menu personnage" class="navigationImage"></a>
+                <a href="Page_Vaisseau.html"><img src="Ressource/Image/Picto/Picto_Vaisseau.png" alt="Pictogramme menu vaisseau" class="navigationImage"></a>
+                <a href="Page_Carte.html"><img src="Ressource/Image/Picto/Picto_Carte.png" alt="Pictogramme menu carte" class="navigationImage"></a>
+                <a href="Page_Magazin.html"><img src="Ressource/Image/Picto/Picto_Magazin.png" alt="Pictogramme menu magazin" class="navigationImage"></a>
+                <a href="Page_Codex.html"><img src="Ressource/Image/Picto/Picto_Codex.png" alt="Pictogramme menu codex" class="navigationImage"></a>
+            </nav>
+            <div>
+                <img src="Ressource/Image/HeadertNav_Fond.png" alt="En tête navigation Star Wars" class="fondNav">
+            </div>
+        </header>
+
+        <main>
+            <section class="shopMenu">
+                <button class="menuChoix" >Consomables</button>
+                <button class="menuChoix" >Vaisseau</button>
+                <button class="menuChoix" >Armes</button>
+                <button class="menuChoix" >Armures</button>
+                <button class="menuChoix" >Cristeaux</button>
+                <button class="menuChoix" >Modificateurs</button>
+            </section>
+            <div class="choixShop" id="1">               
+            </div>
+           
+    
+            <div class="choixShopts" id="6">
+                <h2>Modificateur</h2>
+                <section class="choix_6">
+                    <table>
+                            <tr>
+                                <th>Armure</th>
+                                <th>Détail</th>
+                                <th>Prix <img src="Ressource/Image/Picto/Picto_Credit.png" alt="crédit"></th>
+                            </tr>
+                            <tr>
+                                <td>Résistance froid standard</td>
+                                <td>moins 2 dégât froid résistance au froid</td>
+                                <td>500 <img src="Ressource/Image/Picto/Picto_Credit.png" alt="crédit"></td>
+                            </tr>
+                            <tr>
+                                <td>cRésistance froid intermédiaire</td>
+                                <td>moins 4 dégât froid résistance au froid</td>
+                                <td>1500 <img src="Ressource/Image/Picto/Picto_Credit.png" alt="crédit"></td>
+                            </tr>
+                            <tr>
+                                <td>Résistance froid supérieur</td>
+                                <td>moins 8 dégât froid résistance au froid</td>
+                                <td>3500 <img src="Ressource/Image/Picto/Picto_Credit.png" alt="crédit"></td>
+                            </tr>
+                            <tr>
+                                <td>Résistance feu standard</td>
+                                <td>moins 2 dégât feu résistance au feu</td>
+                                <td>500 <img src="Ressource/Image/Picto/Picto_Credit.png" alt="crédit"></td>
+                            </tr>
+                            <tr>
+                                <td>Résistance feu intermédiaire</td>
+                                <td>moins 4 dégât feu résistance au feu</td>
+                                <td>1500 <img src="Ressource/Image/Picto/Picto_Credit.png" alt="crédit"></td>
+                            </tr>
+                            <tr>
+                                <td>Résistance feu supérieur</td>
+                                <td>moins 8 dégât feu résistance au feu</td>
+                                <td>3500 <img src="Ressource/Image/Picto/Picto_Credit.png" alt="crédit"></td>
+                            </tr>
+                            <tr>
+                                <td>Résistance poison standard</td>
+                                <td>moins 2 dégât poison résistance poison</td>
+                                <td>500 <img src="Ressource/Image/Picto/Picto_Credit.png" alt="crédit"></td>
+                            </tr>
+                            <tr>
+                                <td>Résistance poison intermédiaire</td>
+                                <td>moins 4 dégât poison résistance poison</td>
+                                <td>1500 <img src="Ressource/Image/Picto/Picto_Credit.png" alt="crédit"></td>
+                            </tr>
+                            <tr>
+                                <td>Résistance poison supérieur</td>
+                                <td>moins 8 dégât poison résistance poison</td>
+                                <td>3500 <img src="Ressource/Image/Picto/Picto_Credit.png" alt="crédit"></td>
+                            </tr>
+                            <tr>
+                                <td>Renforcement armure standard</td>
+                                <td>plus 5 en armure</td>
+                                <td>1500 <img src="Ressource/Image/Picto/Picto_Credit.png" alt="crédit"></td>
+                            </tr>
+                            <tr>
+                                <td>Renforcement armure intermédiaire</td>
+                                <td>plus 15 en armure</td>
+                                <td>2500 <img src="Ressource/Image/Picto/Picto_Credit.png" alt="crédit"></td>
+                            </tr>
+                            <tr>
+                                <td>Renforcement armure supérieur</td>
+                                <td>plus 25 en armure</td>
+                                <td>4500 <img src="Ressource/Image/Picto/Picto_Credit.png" alt="crédit"></td>
+                            </tr>
+                    </table>
+                    <table>
+                        <tr>
+                            <th>Arme</th>
+                            <th>Détail</th>
+                            <th>Prix <img src="Ressource/Image/Picto/Picto_Credit.png" alt="crédit"></th>
+                        </tr>
+                        <tr>
+                            <td>dégât standard</td>
+                            <td>dégât plus 1 D6</td>
+                            <td>1000 <img src="Ressource/Image/Picto/Picto_Credit.png" alt="crédit"></td>
+                        </tr>
+                        <tr>
+                            <td>dégât intermédiaire</td>
+                            <td>dégât plus 1 D8</td>
+                            <td>4500 <img src="Ressource/Image/Picto/Picto_Credit.png" alt="crédit"></td>
+                        </tr>
+                        <tr>
+                            <td>dégât supérieur</td>
+                            <td>dégât plus 1 D10</td>
+                            <td>8000 <img src="Ressource/Image/Picto/Picto_Credit.png" alt="crédit"></td>
+                        </tr>
+                        <tr>
+                            <td>dégât feu standard</td>
+                            <td>plus 2 de brûlure</td>
+                            <td>1000 <img src="Ressource/Image/Picto/Picto_Credit.png" alt="crédit"></td>
+                        </tr>
+                        <tr>
+                            <td>dégât feu intermédiaire</td>
+                            <td>plus 4 de brûlure</td>
+                            <td>4500 <img src="Ressource/Image/Picto/Picto_Credit.png" alt="crédit"></td>
+                        </tr>
+                        <tr>
+                            <td>dégât feu supérieur</td>
+                            <td>plus 6 de brûlure</td>
+                            <td>8000 <img src="Ressource/Image/Picto/Picto_Credit.png" alt="crédit"></td>
+                        </tr>
+                        <tr>
+                            <td>dégât froid standard</td>
+                            <td>plus 5 de gelure</td>
+                            <td>1000 <img src="Ressource/Image/Picto/Picto_Credit.png" alt="crédit"></td>
+                        </tr>
+                        <tr>
+                            <td>dégât froid intermédiaire</td>
+                            <td>plus 10 de gelure</td>
+                            <td>4500 <img src="Ressource/Image/Picto/Picto_Credit.png" alt="crédit"></td>
+                        </tr>
+                        <tr>
+                            <td>dégât froid supérieur</td>
+                            <td>plus 20 de gelure</td>
+                            <td>8000 <img src="Ressource/Image/Picto/Picto_Credit.png" alt="crédit"></td>
+                        </tr>
+                        <tr>
+                            <td>dégât poison standard</td>
+                            <td>plus 2 de empoisonner</td>
+                            <td>1000 <img src="Ressource/Image/Picto/Picto_Credit.png" alt="crédit"></td>
+                        </tr>
+                        <tr>
+                            <td>dégât poison intermédiaire</td>
+                            <td>plus 4 de empoisonner</td>
+                            <td>4500 <img src="Ressource/Image/Picto/Picto_Credit.png" alt="crédit"></td>
+                        </tr>
+                        <tr>
+                            <td>dégât poison supérieur</td>
+                            <td>plus 6 de empoisonner</td>
+                            <td>8000 <img src="Ressource/Image/Picto/Picto_Credit.png" alt="crédit"></td>
+                        </tr>
+                        <tr>
+                            <td>dégât electric standard</td>
+                            <td>plus 5 de paralysie</td>
+                            <td>1000 <img src="Ressource/Image/Picto/Picto_Credit.png" alt="crédit"></td>
+                        </tr>
+                        <tr>
+                            <td>dégât electric intermédiaire</td>
+                            <td>plus 10 de paralysie</td>
+                            <td>4500 <img src="Ressource/Image/Picto/Picto_Credit.png" alt="crédit"></td>
+                        </tr>
+                        <tr>
+                            <td>dégât electric supérieur</td>
+                            <td>plus 20 de paralysie</td>
+                            <td>8000 <img src="Ressource/Image/Picto/Picto_Credit.png" alt="crédit"></td>
+                        </tr>
+                        <tr>
+                            <td>surcharge crystaux standard</td>
+                            <td>plus 2 dégâts</td>
+                            <td>1000 <img src="Ressource/Image/Picto/Picto_Credit.png" alt="crédit"></td>
+                        </tr>
+                        <tr>
+                            <td>surcharge crystaux intermédiaire</td>
+                            <td>plus 4 dégâts</td>
+                            <td>4500 <img src="Ressource/Image/Picto/Picto_Credit.png" alt="crédit"></td>
+                        </tr>
+                        <tr>
+                            <td>surcharge crystaux supérieur</td>
+                            <td>plus 8 dégâts</td>
+                            <td>8000 <img src="Ressource/Image/Picto/Picto_Credit.png" alt="crédit"></td>
+                        </tr>
+                    </table>
+                </section>
+            </div>
+        </main>
+
+        <footer>
+            <div class="FondFooter">
+                <img src="Ressource/Image/Footer_Fond.png" alt="Bas de Page Star Wars">
+            </div>
+        </footer>
+
+    </body>
+</html>

@@ -1,0 +1,53 @@
+@media screen and (max-width: 935px) {
+
+    .box_connection{
+        transform: translate(0px, 15%) ;
+        width: 100%;
+        border: none;
+        border-radius: 0;
+        box-sizing:content-box;
+        box-shadow: 0 0 15px 6px aqua;
+        padding: 20px;
+    }
+
+    form{
+        font-size: 30px;
+    }
+
+    .email, .motdepasse{
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .contentBtn{
+        gap: 7%;
+    }
+
+    /*.FondFooter img{
+        display: none;
+    }*/
+
+
+    .contentBarreAnimation{
+        padding: 10px;
+        border-top: 5px goldenrod;
+        bottom: 15px;
+        left: 15%;
+    }
+
+    .conteneur{
+        display: none;
+    }
+
+    .conteneurShadow{
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 440px) {
+
+    .box_connection{
+        transform: translate(0px, 35%) ;
+    }
+}

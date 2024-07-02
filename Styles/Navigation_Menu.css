@@ -1,0 +1,36 @@
+header{
+    box-sizing: border-box;
+    margin-top: 2%;
+    width: 100%;
+    height: 50px;
+}
+
+.fondNav{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+}
+
+.navigation img{
+    width: 90%;
+}
+.navigationImage{
+    transition-duration: 200ms;
+}
+.navigationImage:hover{
+    transform: scale(0.85) ;
+}
+
+@media screen and (max-width: 1260px){
+
+    .fondNav{
+        display: none;
+    }
+}
+

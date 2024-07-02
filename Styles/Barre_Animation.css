@@ -1,0 +1,13 @@
+footer{
+    margin-top: 50px;
+}
+
+.FondFooter{
+    position: initial;
+    width: 100%;
+}
+
+.FondFooter img{
+    width: 100%;
+    object-fit: fill;
+}

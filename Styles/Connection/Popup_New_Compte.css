@@ -1,0 +1,80 @@
+
+.popupBackgroundNewCompte{
+    display: none;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(31, 31, 31, 0.95);
+    z-index: 3;
+    bottom: 0px;
+}
+
+.popupNewCompte{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50%;
+    padding: 10px;
+    background-color: rgba(104, 189, 192, 0.7);
+    border: 2px solid rgb(89, 211, 205);
+    border-radius: 10px;
+    box-shadow: 0 0 20px 1px aqua;
+    z-index: 4;
+}
+
+.popupNewCompte h2{
+    display: flex;
+    justify-content: center;
+    color: goldenrod;
+    font-family: "Anta", sans-serif;
+    font-size: 3em;
+}
+
+.popupNewCompte div{
+    padding : 5px;
+}
+
+.popupNewCompte input{
+    margin-bottom: 25px;
+}
+
+.popupNewCompte button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4%;
+    margin-bottom: 2%;
+    margin-left: 25%;
+    width: 50%;
+    border-radius: 3px;
+    border: 2px solid rgb(89, 211, 205);
+    background-color:rgba(95, 158, 160, 0.7); 
+    color: aqua;
+    padding: 10px;
+    font-size: 1em;
+}
+
+.btnCreerCompte:hover{
+    opacity: 0.7;
+    box-shadow: 0 0 10px 3px aqua;
+    background-color: rgba(39, 57, 58, 0.7);
+}
+
+@media screen and (max-width: 1024px){
+
+    .popupNewCompte h2{
+        font-size: 2.5em;
+    }
+
+}
+
+@media screen and (max-width: 767.98px){
+
+    .popupNewCompte{
+        width: 80%;
+    }
+
+    .popupNewCompte h2{
+        font-size: 2em;
+    }
+}

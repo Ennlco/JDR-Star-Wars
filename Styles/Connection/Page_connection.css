@@ -1,0 +1,201 @@
+/* ------ Général ------ */
+
+*{
+    font-family: "Anta", sans-serif;
+}
+
+/* ------ En-Tête ----- */
+
+header{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.fondHeadert{
+    width: 95%;
+    height: 10%;
+}
+
+.fondHeadert img{
+    width: 100%;
+    object-fit: fill;
+}
+
+/*------ Connection ------ */
+
+main{
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 7%;
+    margin-bottom: 7%;
+
+}
+
+.box_connection{
+    width: 40%;
+    height: 45%;
+    box-sizing: border-box;
+    background-color: rgba(104, 189, 192, 0.7);
+    border: 3px solid rgb(89, 211, 205);
+    box-shadow: 0 0 50px 1px aqua;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    font-style: normal; 
+    font-size: 2em; 
+    color: aqua;
+}
+
+.email, .motdepasse{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 15%;
+}
+
+.motdepasse{
+    margin-top: 5%;
+}
+
+
+input{
+    border-radius: 3px;
+    border: 0.5px solid rgb(89, 211, 205);
+    padding: 5px;
+    background-color:rgba(95, 158, 160, 0.7); 
+    font-weight: 100;
+    font-style: normal; 
+    font-size: 1em; 
+    color: aqua;
+    transition: background-color 500ms
+}
+
+.contentBtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    gap: 15%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.connection{
+    padding: 10px;
+}
+
+input[id='connection']:hover{
+    opacity: 0.7;
+    box-shadow: 0 0 10px 2px aqua;
+    background-color: rgba(39, 57, 58, 0.7) ;
+}
+
+.new{
+    border-radius: 3px;
+    border: 0.5px solid rgb(89, 211, 205);
+    background-color:rgba(95, 158, 160, 0.7); 
+    color: aqua;
+    padding: 5px;
+    font-size: 1em;
+    width: 60px;
+    height: 60px;
+}
+
+button{
+    transition: background-color 500ms
+}
+
+button[id='new']:hover{
+    opacity: 0.7;
+    box-shadow: 0 0 10px 2px aqua;
+}
+
+button:hover{
+    background-color: rgba(39, 57, 58, 0.7);
+}
+
+/* -------- Bas de Page ------ */
+
+.FondFooter{
+    position: fixed;
+    bottom: 15px;
+    width: 99%;
+}
+
+.FondFooter img{
+    width: 100%;
+    object-fit: fill;
+}
+
+/* ------- Barre Animation -------- */
+
+.contentBarreAnimation{
+    position: fixed;
+    left: 24%;
+    bottom: 0px;
+}
+
+.conteneur{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    z-index: 2;
+}
+
+.conteneurShadow{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    z-index: 1;
+    position: relative;
+    bottom: 49px;
+}
+
+.barre{
+    height: 50px;
+    width: 15px;
+    background-color: aqua;
+}
+
+.Shadow{
+    height: 50px;
+    width: 15px;
+    background-color: rgba(35, 87, 87, 0.5);
+
+}
+
+.barre1, .barre6, .barre11, .barre16, .barre21, .barre26, .barre31, .barre36 {
+    animation: 2.5s linear 0s infinite alternate barreMove;
+}
+.barre2, .barre7, .barre12, .barre17, .barre22, .barre27, .barre32, .barre37{
+    animation: 1.5s linear 0s infinite alternate barreMove;
+}
+.barre3, .barre8, .barre13, .barre18, .barre23, .barre28, .barre33, .barre38{
+    animation: 1s linear 0s infinite alternate barreMove;
+}
+.barre4, .barre9, .barre14, .barre19, .barre24, .barre29, .barre34, .barre39{
+    animation: 1.5s linear 0s infinite alternate barreMove;
+}
+.barre5, .barre10, .barre15, .barre20, .barre25, .barre30, .barre35, .barre40{
+    animation: 2s linear 0s infinite alternate barreMove;
+}
+
+@keyframes barreMove{
+    from{transform:translate(0px, 25px) scaleY(0);}
+    to{transform:translate(0px, 0px) scaleY(1);}
+}
+
+
+
+
+
+
+

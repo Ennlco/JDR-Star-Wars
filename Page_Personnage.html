@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8" />
+        <title>JDR Star Wars personnage</title>
+        <link rel="stylesheet" href="Styles/Style.css" />
+        <link rel="stylesheet" href="Styles/Personnage/Personnage.css">
+        <link rel="stylesheet" href="Styles/Personnage/versionTablette.css">
+        
+        <link rel="stylesheet" href="Styles/Navigation_Menu.css">
+        <link rel="stylesheet" href="Styles/Barre_Animation.css">
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Anta&display=swap" rel="stylesheet">
+
+        <script src="JavaScript/Personnage/Personnage_Image.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <nav class="navigation">
+                <a href="Page_Accueil.html" ><img src="Ressource/Image/Picto/Picto_Accueil.png" alt="Pictogramme menu accueil" class="navigationImage"></a>
+                <a href="Page_Personnage.html"><img src="Ressource/Image/Picto/Picto_Personnage.png" alt="Pictogramme menu personnage" class="navigationImage"></a>
+                <a href="Page_Vaisseau.html"><img src="Ressource/Image/Picto/Picto_Vaisseau.png" alt="Pictogramme menu vaisseau" class="navigationImage"></a>
+                <a href="Page_Carte.html"><img src="Ressource/Image/Picto/Picto_Carte.png" alt="Pictogramme menu carte" class="navigationImage"></a>
+                <a href="Page_Magazin.html"><img src="Ressource/Image/Picto/Picto_Magazin.png" alt="Pictogramme menu magazin" class="navigationImage"></a>
+                <a href="Page_Codex.html"><img src="Ressource/Image/Picto/Picto_Codex.png" alt="Pictogramme menu codex" class="navigationImage"></a>
+            </nav>
+            <div>
+                <img src="Ressource/Image/HeadertNav_Fond.png" alt="En tête navigation Star Wars" class="fondNav">
+            </div>
+        </header>
+
+        <main>
+            <Section class="enTete">
+                <div class="imagePerso">
+                </div>
+                <div class="infoText2">
+                    <label for="Champ">Niveau :</label>
+                    <input type="text" class="Champ" placeholder="6">
+                    <br>
+                    <label for="Champ">Orientation :</label>
+                    <input type="text" class="Champ" placeholder="Neutre">
+                    <br>
+                    <label for="Champ">Point de dépassement :</label>
+                    <input type="text" class="Champ" placeholder="2">
+                </div>
+                <div class="infoText">
+                    <label for="Champ">Nom du personnage :</label>
+                    <input type="text" class="Champ" placeholder="Nix">
+                    <br>
+                    <label for="Champ">Joueur :</label>
+                    <input type="text" name="Champ" class="Champ" placeholder="Etienne">
+                    <br>
+                    <label for="Champ">Espèce :</label>
+                    <input type="text" class="Champ" placeholder="Zabrack">
+                    <br>
+                    <label for="Champ">Spécialité :</label>
+                    <input type="text" class="ChampSpecialite" placeholder="Guerrier et manipulateur de la force">
+                </div>
+            </Section>
+            <table class="pv">
+                <caption class="pvTitre">Point de vie</caption>
+                <tr>
+                    <th class="pvTotal">Total</th>
+                    <th class="pvTotal">Actuel</th>
+                </tr>
+                <tr>
+                    <td class="pVChiffre">26</td>
+                    <td class="pVChiffre">26</td>
+                </tr>
+            </table>
+            <section class="corp">
+                <div>
+                    <table class="caracteristiques">
+                        <tr class="caracContour">
+                            <th class="caracTitre">Caractéristique</th>
+                            <th class="caracTitre">Valeur</th>
+                            <th class="caracTitre">MOD</th>
+                            <th class="points" value=""></th>
+                        </tr>
+                        <tr class="caracContour">
+                            <td class="caracElement">Vitalité (VIT)</td>
+                            <td class="caracElement">18</td>
+                            <td class="caracElement">4</td>
+                            <td class="tdAjoutRetrait"><button class="btnAjoutRetrait" id="btnPlus">+</button><button class="btnAjoutRetrait" id="btnMoins">-</button></td>
+                        </tr>
+                        <tr class="caracContour">
+                            <td class="caracElement">Endurance (END)</td>
+                            <td class="caracElement">14</td>
+                            <td class="caracElement">2</td>
+                            <td class="tdAjoutRetrait"><button class="btnAjoutRetrait" id="btnPlus">+</button><button class="btnAjoutRetrait" id="btnMoins">-</button></td>
+                        </tr>
+                        <tr class="caracContour">
+                            <td class="caracElement">Force (FOR)</td>
+                            <td class="caracElement">14</td>
+                            <td class="caracElement">2</td>
+                            <td class="tdAjoutRetrait"><button class="btnAjoutRetrait" id="btnPlus">+</button><button class="btnAjoutRetrait" id="btnMoins">-</button></td>
+                        </tr>
+                        <tr class="caracContour">
+                            <td class="caracElement">Dextérité (DEX)</td>
+                            <td class="caracElement">14</td>
+                            <td class="caracElement">2</td>
+                            <td class="tdAjoutRetrait"><button class="btnAjoutRetrait" id="btnPlus">+</button><button class="btnAjoutRetrait" id="btnMoins">-</button></td>
+                        </tr>
+                        <tr class="caracContour">
+                            <td class="caracElement">Precision (PRE)</td>
+                            <td class="caracElement">12</td>
+                            <td class="caracElement">1</td>
+                            <td class="tdAjoutRetrait"><button class="btnAjoutRetrait" id="btnPlus">+</button><button class="btnAjoutRetrait" id="btnMoins">-</button></td>
+                        </tr>
+                        <tr class="caracContour">
+                            <td class="caracElement">Affinité Force (AFF)</td>
+                            <td class="caracElement">22</td>
+                            <td class="caracElement">6</td>
+                            <td class="tdAjoutRetrait"><button class="btnAjoutRetrait" id="btnPlus">+</button><button class="btnAjoutRetrait" id="btnMoins">-</button></td>
+                        </tr>
+                        <tr class="caracContour">
+                            <td class="caracElement">Noblesse (NOB)</td>
+                            <td class="caracElement">10</td>
+                            <td class="caracElement">0</td>
+                            <td class="tdAjoutRetrait"><button class="btnAjoutRetrait" id="btnPlus">+</button><button class="btnAjoutRetrait" id="btnMoins">-</button></td>
+                        </tr>
+                    </table>
+                </div>
+                <div>
+                    <table class="caracteristiques">
+                        <tr class="caracContour">
+                            <th class="caracTitre">Jets Sauvegardes</th>
+                            <th class="caracTitre">Total</th>
+                            <th class="caracTitre">Base</th>
+                            <th class="caracTitre">MOD</th>
+                        </tr>
+                        <tr class="caracContour">
+                            <td class="caracElement">Douleur (FOR)</td>
+                            <td class="caracElement">6</td>
+                            <td class="caracElement">4</td>
+                            <td class="caracElement">2</td>
+                        </tr>
+                        <tr class="caracContour">
+                            <td class="caracElement">Réflexe (DEX)</td>
+                            <td class="caracElement">2</td>
+                            <td class="caracElement">0</td>
+                            <td class="caracElement">2</td>
+                        </tr>
+                        <tr class="caracContour">
+                            <td class="caracElement">Volonté (AFF)</td>
+                            <td class="caracElement">8</td>
+                            <td class="caracElement">2</td>
+                            <td class="caracElement">6</td>
+                        </tr>
+                        <tr class="caracContour">
+                            <td class="caracElement">Perception (PRE)</td>
+                            <td class="caracElement">1</td>
+                            <td class="caracElement">0</td>
+                            <td class="caracElement">1</td>
+                        </tr>
+                    </table>
+                    <div class="atout">
+                        <h2>Atout : </h2>
+                        <textarea name="atout" id="atout" cols="40" rows="10"></textarea>
+                    </div>
+                </div>
+                
+            </section>
+            <section class="competence">
+                <table class="caracteristiques">
+                    <tr class="caracContour">
+                        <th class="caracTitre">Compétence</th>
+                        <th class="caracTitre">Total</th>
+                        <th class="caracTitre">Base</th>
+                        <th class="caracTitre">MOD</th>
+                    </tr>
+                    <tr class="caracContour">
+                        <td class="caracElement">Conn. bestiaire</td>
+                        <td class="caracElement">8</td>
+                        <td class="caracElement">2</td>
+                        <td class="caracElement">AFF</td>
+                    </tr>
+                    <tr class="caracContour">
+                        <td class="caracElement">Conn. légende</td>
+                        <td class="caracElement">8</td>
+                        <td class="caracElement">2</td>
+                        <td class="caracElement">AFF</td>
+                    </tr>
+                    <tr class="caracContour">
+                        <td class="caracElement">Conn. science / pouvoir</td>
+                        <td class="caracElement">10</td>
+                        <td class="caracElement">4</td>
+                        <td class="caracElement">AFF</td>
+                    </tr>
+                    <tr class="caracContour">
+                        <td class="caracElement">Conn. Monde</td>
+                        <td class="caracElement">8</td>
+                        <td class="caracElement">2</td>
+                        <td class="caracElement">AFF</td>
+                    </tr>
+                    <tr class="caracContour">
+                        <td class="caracElement">Manipulation</td>
+                        <td class="caracElement">8</td>
+                        <td class="caracElement">2</td>
+                        <td class="caracElement">AFF</td>
+                    </tr>
+                    <tr class="caracContour">
+                        <td class="caracElement">Négociation</td>
+                        <td class="caracElement">-5</td>
+                        <td class="caracElement">-5</td>
+                        <td class="caracElement">NOB</td>
+                    </tr>
+                    <tr class="caracContour">
+                        <td class="caracElement">Intimidation</td>
+                        <td class="caracElement">-5</td>
+                        <td class="caracElement">-5</td>
+                        <td class="caracElement">NOB</td>
+                    </tr>
+                    <tr class="caracContour">
+                        <td class="caracElement">Mensonge</td>
+                        <td class="caracElement">-5</td>
+                        <td class="caracElement">-5</td>
+                        <td class="caracElement">NOB</td>
+                    </tr>
+                    <tr class="caracContour">
+                        <td class="caracElement">Commandement</td>
+                        <td class="caracElement">-5</td>
+                        <td class="caracElement">-5</td>
+                        <td class="caracElement">NOB</td>
+                    </tr>
+                    <tr class="caracContour">
+                        <td class="caracElement">Discrétion</td>
+                        <td class="caracElement">4</td>
+                        <td class="caracElement">2</td>
+                        <td class="caracElement">DEX</td>
+                    </tr>
+                    <tr class="caracContour">
+                        <td class="caracElement">Acrobatie</td>
+                        <td class="caracElement">6</td>
+                        <td class="caracElement">4</td>
+                        <td class="caracElement">DEX</td>
+                    </tr>
+                    <tr class="caracContour">
+                        <td class="caracElement">Saut / escalade</td>
+                        <td class="caracElement">6</td>
+                        <td class="caracElement">4</td>
+                        <td class="caracElement">DEX</td>
+                    </tr>
+                    <tr class="caracContour">
+                        <td class="caracElement">Course</td>
+                        <td class="caracElement">6</td>
+                        <td class="caracElement">4</td>
+                        <td class="caracElement">DEX</td>
+                    </tr>
+                    <tr class="caracContour">
+                        <td class="caracElement">Enfoncer</td>
+                        <td class="caracElement">2</td>
+                        <td class="caracElement">0</td>
+                        <td class="caracElement">FOR</td>
+                    </tr>
+                    <tr class="caracContour">
+                        <td class="caracElement">Porter</td>
+                        <td class="caracElement">2</td>
+                        <td class="caracElement">0</td>
+                        <td class="caracElement">FOR</td>
+                    </tr>
+                    <tr class="caracContour">
+                        <td class="caracElement">Soulever</td>
+                        <td class="caracElement">2</td>
+                        <td class="caracElement">0</td>
+                        <td class="caracElement">FOR</td>
+                    </tr>
+                    <tr class="caracContour">
+                        <td class="caracElement">Strat. militaire</td>
+                        <td class="caracElement">2</td>
+                        <td class="caracElement">0</td>
+                        <td class="caracElement">FOR</td>
+                    </tr>
+                    <tr class="caracContour">
+                        <td class="caracElement">Crochetage</td>
+                        <td class="caracElement">3</td>
+                        <td class="caracElement">2</td>
+                        <td class="caracElement">PER</td>
+                    </tr>
+                    <tr class="caracContour">
+                        <td class="caracElement">Estimation</td>
+                        <td class="caracElement">1</td>
+                        <td class="caracElement">0</td>
+                        <td class="caracElement">PER</td>
+                    </tr>
+                    <tr class="caracContour">
+                        <td class="caracElement">1ers secours</td>
+                        <td class="caracElement">3</td>
+                        <td class="caracElement">2</td>
+                        <td class="caracElement">PER</td>
+                    </tr>
+                    <tr class="caracContour">
+                        <td class="caracElement">Sens de l’orientation</td>
+                        <td class="caracElement">3</td>
+                        <td class="caracElement">2</td>
+                        <td class="caracElement">PER</td>
+                    </tr>
+                </table>
+                <div class="equipement">
+                    <div class="armure">
+                        <label for="inputArmure" class="inputArmureText">Armure : </label>
+                        <input type="text" name="inputArmure" id="inputArmure" class="inputArmure" placeholder="Armure de combat de Manipulatuer de la force">
+                        <table class="tableArme">
+                            <tr class="trArme">
+                                <th class="thArme">Type</th>
+                                <th class="thArme">Réduction</th>
+                            </tr>
+                            <tr class="trArme">
+                                <td class="tdArme"><input type="text" name="attaque1" id="attaque1" class="inputAttaque" placeholder="Physique"></td>
+                                <td class="tdArme"><input type="text" name="degat1" id="degat1" class="inputDegat" placeholder=" -5 dégâts"></td>
+                            </tr>
+                            <tr class="trArme">
+                                <td class="tdArme"><input type="text" name="attaque1" id="attaque1" class="inputAttaque" placeholder="élémantaire"></td>
+                                <td class="tdArme"><input type="text" name="degat1" id="degat1" class="inputDegat" placeholder="-5 dégâts"></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="Arme">
+                        <label for="inputArme" class="inputArmeText">Arme : </label>
+                        <input type="text" name="inputArme" id="inputArme" class="inputArme" placeholder="Sabre laser de cristal noir">
+                        <table class="tableArme">
+                            <tr class="trArme">
+                                <th class="thArme">Forme</th>
+                                <th class="thArme">Dégâts</th>
+                                <th class="thArme">Type</th>
+                            </tr>
+                            <tr class="trArme">
+                                <td class="tdArme"><input type="text" name="attaque1" id="attaque1" class="inputAttaque" placeholder=" Frappe Unique de force"></td>
+                                <td class="tdArme"><input type="text" name="degat1" id="degat1" class="inputDegat" placeholder=" D8 + FOR + AFF + 16 + D10 + 6 brulure"></td>
+                                <td class="tdArme"><input type="text" name="Type1" id="Type1" class="inputType" placeholder="Tranchant"></td>
+                            </tr>
+                            <tr class="trArme">
+                                <td class="tdArme"><input type="text" name="attaque2" id="attaque2" class="inputAttaque" placeholder="Frappes Multiples"></td>
+                                <td class="tdArme"><input type="text" name="degat2" id="degat2" class="inputDegat" placeholder=" 4D4 + DEX + PRE + 16 + D10 + 6 brulure"></td>
+                                <td class="tdArme"><input type="text" name="Type2" id="Type2" class="inputType" placeholder="Tranchant"></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="pouvoir">
+                        <h2>Pouvoir : </h2>
+                        <textarea name="Pouvoir" id="pouvoir" cols="60" rows="20"></textarea>
+                    </div>
+                </div>
+            </section>
+            <section class="inventaireCredit">
+                <h2>Inventaire :</h2>
+                <textarea name="inventaire" id="inventaire" cols="100" rows="10"></textarea>
+                <div>
+                    <label for="credit" class="creditText">Credit : </label>
+                    <input type="text" name="credit" id="credit" class="credit" placeholder="1000">
+                    <img src="Ressource/Image/Picto/Picto_Credit.png" alt="Pictogramme Credit" class="pictoCredit">
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="FondFooter">
+                <img src="Ressource/Image/Footer_Fond.png" alt="Bas de Page Star Wars">
+            </div>
+        </footer>
+
+    </body>
+</html>

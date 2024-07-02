@@ -1,0 +1,117 @@
+*{
+    font-family: "Anta", sans-serif;
+}
+
+main{
+    max-width: 1620px;
+}
+
+.contenteInfo{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 70px;
+}
+
+.barreChoix{
+    display: flex;
+    flex-direction: column;
+    font-style: normal; 
+    color: rgb(255, 196, 0);
+    width: 200px;
+}
+
+.elementInfo{
+    width: 80%;
+    padding: 10px;
+}
+
+.choix{
+    border: 2px solid darkgoldenrod;
+    border-radius: 8px;
+    color: rgb(255, 196, 0);
+    background-color: rgba(128, 128, 128, 0.2);
+    height: 50px;
+    width: 200px;
+    margin-bottom: 10px;
+    font-weight: 400;
+    font-size: 1.2em; 
+    text-align: center;
+    transition: background-color 500ms;
+}
+.choix:hover{
+    background-color: rgba(192, 192, 192, 0.4) ;
+}
+
+.choixPersonnage, .choixBestiaire, .choixResumer{
+    border-right: 3px solid darkgoldenrod;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.choixPersonnage{
+    display: none;
+    flex-direction: column;
+}
+.choixBestiaire{
+    display: none;
+    flex-direction: column;
+}
+.choixResumer{
+    display: none;
+    flex-direction: column;
+}
+
+.choixSecondaire{
+    margin-bottom: 5px;
+    margin-top: 5px;
+    font-weight: 200;
+    font-size: 1.05em; 
+    transition: background-color 300ms;
+}
+.choixSecondaire:hover{
+    background-color: rgba(128, 128, 128, 0.6) ;
+}
+
+#republique{
+    color: rgb(88, 88, 255);
+    border-bottom: 1px solid darkgoldenrod;
+    padding-bottom: 5px;
+    font-size: 1.1em; 
+}
+#empire{
+    color: rgb(255, 62, 62);
+    border-bottom: 1px solid darkgoldenrod;
+    border-top: 1px solid darkgoldenrod;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    font-size: 1.1em; 
+}
+#autre{
+    color: burlywood;
+    border-bottom: 1px solid darkgoldenrod;
+    border-top: 1px solid darkgoldenrod;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    font-size: 1.1em; 
+}
+
+.elementInfo h2{
+    color: rgb(255, 196, 0);
+    font-size: 30px;
+    margin-top: 0px;
+    margin-bottom: 50px;
+}
+
+.elementInfo p{
+    color: white;
+    font-size: 20px;
+    text-justify: auto;
+}
+
+.image_et_info{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    margin-bottom: 50px;
+}
+

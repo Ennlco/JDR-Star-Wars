@@ -1,0 +1,202 @@
+main{
+    padding: 10px;
+    max-width: 1620px;
+    margin: auto;
+}
+
+.enTete{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.imagePerso{
+    width: 300px;
+    height: 300px;
+    border: 2px solid darkgoldenrod;
+}
+
+.infoText, .infoText2{
+    font-family: "Anta", sans-serif;
+    font-size: 1.4em;
+    color: white;
+}
+
+input{
+    font-family: "Anta", sans-serif;
+    font-size: 1em;
+    color: goldenrod;
+    background-color: rgba(240, 248, 255, 0);
+    border: none;
+    margin-bottom: 30px;
+}
+
+.ChampSpecialite{
+    width: 400px;
+}
+
+.Champ{
+    width: 150px;
+}
+
+.pv{
+    font-family: "Anta", sans-serif;
+    text-align: center;
+    margin-top: 80px;
+    margin-left: 40px;
+}
+.pvTitre{
+    font-size: 1.7em;
+    color:deepskyblue;
+}
+
+th, tr, td{
+    padding: 15px;
+}
+
+.pvTotal{
+    font-size: 1.5em;
+    color: white;
+}
+.pVChiffre{
+    font-size: 1.2em;
+    color: goldenrod;
+}
+
+.corp{
+    display: grid;
+    margin-top: 100px;
+    grid-template-columns: 50% 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.caracteristiques{
+    border-collapse: collapse ;
+    font-family: "Anta", sans-serif;
+    text-align: center;
+}
+.caracContour, .caracTitre, .caracElement{
+    border: 1px solid darkgoldenrod;
+    padding: 15px;
+}
+
+.caracTitre{
+    font-size: 1.5em;
+    color:deepskyblue;
+}
+.caracElement{
+    font-size: 1.2em;
+    color: goldenrod;
+}
+
+button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    background-color: rgba(128, 128, 128, 0.3);
+    font-family: "Anta", sans-serif;
+    font-size: 1em;
+    color: goldenrod;
+    margin: auto;
+}
+
+.competence{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 100px;
+    gap: 20px;
+}
+
+.Arme{
+    margin-top: 150px;
+}
+.inputArmureText, .inputArmeText{
+    font-family: "Anta", sans-serif;
+    font-size: 1.4em;
+    color: white;
+}
+.inputArmure, .inputArme{
+    width: 500px;
+    font-family: "Anta", sans-serif;
+    font-size: 1.2em;
+    color: goldenrod;
+}
+
+.tableArme{
+    border-collapse: collapse ;
+    font-family: "Anta", sans-serif;
+    text-align: center;
+}
+.trArme, .thArme, .tdArme{
+    border: 1px solid darkgoldenrod;
+    padding: 15px;
+}
+.thArme{
+    font-size: 1.4em;
+    color:deepskyblue;
+}
+.tdArme{
+    font-size: 1.2em;
+    color: goldenrod;
+}
+.inputAttaque{
+    width: 220px;
+}
+.inputDegat{
+    width: 380px;
+}
+.inputType{
+    width: 100px;
+}
+
+h2{
+    font-family: "Anta", sans-serif;
+    font-size: 1.4em;
+    color: white;
+}
+textarea{
+    border: 1px solid darkgoldenrod;
+    border-radius: 5px;
+    background-color: rgba(128, 128, 128, 0.2);
+    font-family: "Anta", sans-serif;
+    font-size: 1.2em;
+    color: goldenrod;
+}
+
+.pouvoir{
+    margin-top: 100px;
+}
+
+.inventaireCredit{
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+}
+
+.inventaireCredit textarea{
+    width: 95%;
+}
+
+.inventaireCredit div{
+    margin-top: 25px;
+}
+
+.credit{
+    font-family: "Anta", sans-serif;
+    font-size: 1.2em;
+    color: goldenrod;
+    width: 100px;
+}
+.creditText{
+    font-family: "Anta", sans-serif;
+    font-size: 1.4em;
+    color: white;
+}
+.pictoCredit{
+    width: 40px;
+}

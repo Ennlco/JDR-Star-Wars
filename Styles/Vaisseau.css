@@ -1,0 +1,121 @@
+.vueGlobal{
+    display: grid;
+    grid-template-columns: 15% 60% 15%;
+    justify-content: center;
+    gap: 3%;
+    margin-top: 100px;
+}
+
+.vaisseauZone{
+    width: 95%;
+    transition-duration: 200ms
+}
+
+.carteVaisseau{
+    width: 100%;
+    box-shadow: 0 0 15px 1px darkcyan;
+    margin-top: 250px;
+    z-index: 1;
+}
+
+p{
+    font-family: "Anta", sans-serif;
+    font-size: 1.3em;
+    color: white;
+}
+
+.contourZone{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 25px;
+}
+.vaisseauZone:hover{
+    box-shadow: 0 0 15px 1px darkcyan;
+}
+
+.inventaireVaisseau{
+    margin-top: 50px;
+    margin-left: 25px;
+}
+
+textarea{
+    border: 1px solid darkgoldenrod;
+    background-color: rgba(128, 128, 128, 0.2);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: "Anta", sans-serif;
+    font-style: normal;
+    font-size: 2em;
+    color: white;
+    width: 95%;
+}
+
+h2{
+    font-family: "Anta", sans-serif;
+    font-style: normal;
+    font-size: 4em;
+    color: darkgoldenrod;
+}
+
+.kinSelection{
+    display: none;
+    width: 100%;
+    transform: translate(0,-100%);
+    z-index: 2;
+}
+.lizanSelection{
+    display: none;
+    width: 100%;
+    transform: translate(0,-100%);
+    z-index: 2;
+}
+.reacteurSelection{
+    display: none;
+    width: 100%;
+    transform: translate(0,-100%);
+    z-index: 2;
+}
+.communeSelection{
+    display: none;
+    width: 100%;
+    transform: translate(0,-100%);
+    z-index: 2;
+}
+.stockageSelection{
+    display: none;
+    width: 100%;
+    transform: translate(0,-100%);
+    z-index: 2;
+}
+.reunionSelection{
+    display: none;
+    width: 100%;
+    transform: translate(0,-100%);
+    z-index: 2;
+}
+.medicaleSelection{
+    display: none;
+    width: 100%;
+    transform: translate(0,-100%);
+    z-index: 2;
+}
+.pilotageSelection{
+    display: none;
+    width: 100%;
+    transform: translate(0,-100%);
+    z-index: 2;
+}
+
+@media screen and (max-width: 1024px){
+    
+    .vueGlobal{
+        display: flex;
+    }
+
+    .carteVaisseau{
+        margin-top: 400px;
+    }
+
+}
+
