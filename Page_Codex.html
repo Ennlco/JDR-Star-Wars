@@ -1,17 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 
     <head>
         <meta charset="utf-8" />
         <title>JDR Star Wars Codex</title>
-        <link rel="stylesheet" href="Styles/Style.css" />
+        
+        <link rel="stylesheet" href="Styles/Codex.css">
+        <link rel="stylesheet" href="Styles/Style.css">
         <link rel="stylesheet" href="Styles/Navigation_Menu.css">
         <link rel="stylesheet" href="Styles/Barre_Animation.css">
-        <link rel="stylesheet" href="Styles/Codex.css">
 
-        <script src="JavaScript/Codex/tableau_Personnage.js" defer></script>
-        <script src="JavaScript/Codex/tableau_Bestiare.js" defer></script>
-        <script src="JavaScript/Codex/tableau_Resumer.js" defer></script>
+        <script src="JavaScript/Codex/tableau_Onglet.js" defer></script>
+        <script src="JavaScript/Codex/tableau_Info.js" defer></script>
 
         <script src="JavaScript/Codex/codex.js" defer></script>
         
@@ -40,43 +40,61 @@
                 <div class="barreChoix">
                     <button type="button" class="choix">Personnages</button>
                     <div class="choixPersonnage" id="personnage">
-                        <div class="choixSection" id="republique">République</div>
-                        <div class="choixSecondaire" id="0">Commandant Madine</div>
-                        <div class="choixSecondaire" id="1">Doc</div>
-                        <div class="choixSecondaire" id="2">Docteur Meln</div>
-                        <div class="choixSecondaire" id="3">Docteur Ortis</div>
-                        <div class="choixSecondaire" id="4">Docteur Carciri</div>
-                        <div class="choixSecondaire" id="5">Grand Marshal Cheketta</div>
-                        <div class="choixSecondaire" id="6">Maître Warren</div>
-                        <div class="choixSecondaire" id="7">Géneral Jace Malcom</div>
-                        <div class="choixSection" id="empire">Empire</div>
-                        <div class="choixSecondaire" id="8">Dark Lachris</div>
-                        <div class="choixSecondaire" id="9">Vekarr</div>
-                        <div class="choixSecondaire" id="10">Dark Baras</div>
-                        <div class="choixSection" id="autre">Autre</div>
-                        <div class="choixSecondaire" id="11">Rajivari</div>
-                        <div class="choixSecondaire" id="12">Miarta Sek</div>
-                        <div class="choixSecondaire" id="13">Jake Fenn</div>
                     </div>
                     <button class="choix">Bestiaires</button>
                     <div class="choixBestiaire" id="bestiaire">
-                        <div class="choixSecondaire" id="0">Colicoïde</div>
-                        <div class="choixSecondaire" id="1">Soldat de l'Empire</div>
-                        <div class="choixSecondaire" id="2">Droïde MARK I</div>
-                        <div class="choixSecondaire" id="3">Droïde C86</div>
-                        <div class="choixSecondaire" id="4">Doïde TY-4N</div>
-                        <div class="choixSecondaire" id="5">Doïde Ancien</div>
                     </div>
                     <button class="choix">Résumer</button>
                     <div class="choixResumer" id="resumer">
-                        <div class="choixSecondaire" id="0">Résumer</div>
-                        <div class="choixSecondaire" id="1">Résumer Bidon</div>
-                        <div class="choixSecondaire" id="2">Enregistrement</div>
                     </div>
                 </div>
                 <div class="elementInfo">
 
                 </div>
+            </div>
+            <button type="button" id="open">+</button>
+            <div class="groundModale">
+                <div class="modaleAdd">
+                    <div class="closeModale">
+                        <p>X</p>
+                    </div>
+                    <div class="modalContent">
+                        <div class="top">
+                            <label for="where">Choisissez la catégorie</label>
+                            <select name="selectWhere" id="chooseSelect">
+                            <option value=""></option>
+                            <option value="1">Personnages</option>
+                            <option value="2">Bestiaires</option>
+                            <option value="3">Résumer</option>
+                        </select>
+                        </div>
+                        <div class="addOnglet">
+                            <div class="middle">
+                                <label for="posOnglet">Où ajouter l'onglet</label>
+                                <select name="choosePosOnglet" id="choosePosOnglet">
+                                    <option value=""></option>
+                                    <option value="1">Personnages</option>
+                                    <option value="2">Bestiaires</option>
+                                </select>
+                            </div>
+                            <div class="ongletPerso">
+                                <label for="categoryLess">Dans quelle sous catégorie</label>
+                                <select name="categoryLess" id="categoryLess">
+                                    <option value=""></option>
+                                    <option value="1">République</option>
+                                    <option value="2">Empire</option>
+                                    <option value="3">Autre</option>
+                                </select>
+                            </div>
+                            <div class="bottom">
+                                <label for="onglet">Nom de L'onglet</label>
+                                <input type="text" name="onglet" id="nameOnglet">
+                            </div>
+                        </div>
+                        <button type="button" id="addInfo">Ajouter</button>
+                    </div>
+                </div>
+
             </div>
         </main>
 

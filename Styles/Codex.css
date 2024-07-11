@@ -4,12 +4,15 @@
 
 main{
     max-width: 1620px;
+    min-height: 600px;
+    box-sizing: border-box;
 }
 
 .contenteInfo{
     display: flex;
     justify-content: space-between;
     margin-top: 70px;
+    padding: 15px;
 }
 
 .barreChoix{
@@ -115,3 +118,126 @@ main{
     margin-bottom: 50px;
 }
 
+#open{ 
+    position: fixed;
+    bottom: 100px;
+    right: 40px;
+    background-color: rgba(128, 128, 128, 0.3);
+    color: rgb(255, 196, 0);
+    font-size: 30px;
+    width: 50px;
+    height: 50px;
+    border: 1px solid rgb(255, 196, 0);
+    border-radius: 10px;
+}
+#open:hover{
+    box-shadow: 0 0 15px 1px rgba(255, 196, 0, 0.5);
+}
+
+.groundModale{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modaleAdd{
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(90%, 20%);
+    width: 32%;
+    padding: 20px;
+    background-color: rgba(128, 128, 128, 0.3);
+    border: 1px solid rgb(255, 196, 0);
+    border-radius: 20px;
+    color: rgb(255, 196, 0);
+    font-size: 25px;
+}
+
+.closeModale p {
+    display: flex;
+    justify-content: right;
+    font-size: 20px;
+    margin: 0;
+}
+
+.modalContent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.modaleAdd label{
+    margin-bottom: 15px;
+}
+
+.modaleAdd select{
+    background-color: rgba(128, 128, 128, 0.3);
+    color: rgb(255, 196, 0);
+    padding: 5px;
+    width: 50%;
+}
+
+.modaleAdd input[type="text"]{
+    background-color: rgba(128, 128, 128, 0.3);
+    color: rgb(255, 196, 0);
+    padding: 5px;
+    width: 50%;
+    font-size: 16px;
+}
+
+.modaleAdd option{
+    color: rgb(255, 196, 0);
+    background-color: black;
+    font-size: 16px;
+}
+
+.addOnglet{
+    width: 80%;
+}
+
+.top{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgb(255, 196, 0);
+}
+
+.middle, .ongletPerso, .bottom{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgb(255, 196, 0);
+}
+
+.ongletPerso option[value="1"]{
+    color: rgb(88, 88, 255);
+}
+.ongletPerso option[value="2"]{
+    color: rgb(255, 62, 62);
+}
+.ongletPerso option[value="3"]{
+    color: burlywood;
+}
+
+.modaleAdd button{
+    margin-top: 20px;
+    width: 50%;
+    padding: 10px;
+    font-size: 25px;
+    color: rgb(255, 196, 0);
+    border: 1px solid rgb(255, 196, 0);
+    border-radius: 10px;
+    background-color: rgba(128, 128, 128, 0.3);
+}

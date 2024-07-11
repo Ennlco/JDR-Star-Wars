@@ -1,3 +1,7 @@
+main{
+    min-height: 600px;
+}
+
 .shopMenu{
     display: flex;
     flex-direction: row;
