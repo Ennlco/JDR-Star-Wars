@@ -12,8 +12,10 @@
 
         <script src="JavaScript/Codex/tableau_Onglet.js" defer></script>
         <script src="JavaScript/Codex/tableau_Info.js" defer></script>
+        <script src="JavaScript/Codex/generation_Modale.js" defer></script>
 
         <script src="JavaScript/Codex/codex.js" defer></script>
+        <script src="JavaScript/Codex/modale_Codex.js" defer></script>
         
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -60,7 +62,7 @@
                     </div>
                     <div class="modalContent">
                         <div class="top">
-                            <label for="where">Choisissez la catégorie</label>
+                            <label for="chooseSelect">Choisissez la catégorie</label>
                             <select name="selectWhere" id="chooseSelect">
                             <option value=""></option>
                             <option value="1">Personnages</option>
@@ -68,33 +70,12 @@
                             <option value="3">Résumer</option>
                         </select>
                         </div>
-                        <div class="addOnglet">
-                            <div class="middle">
-                                <label for="posOnglet">Où ajouter l'onglet</label>
-                                <select name="choosePosOnglet" id="choosePosOnglet">
-                                    <option value=""></option>
-                                    <option value="1">Personnages</option>
-                                    <option value="2">Bestiaires</option>
-                                </select>
-                            </div>
-                            <div class="ongletPerso">
-                                <label for="categoryLess">Dans quelle sous catégorie</label>
-                                <select name="categoryLess" id="categoryLess">
-                                    <option value=""></option>
-                                    <option value="1">République</option>
-                                    <option value="2">Empire</option>
-                                    <option value="3">Autre</option>
-                                </select>
-                            </div>
-                            <div class="bottom">
-                                <label for="onglet">Nom de L'onglet</label>
-                                <input type="text" name="onglet" id="nameOnglet">
-                            </div>
+                        <div class="optionChoix">
+
                         </div>
                         <button type="button" id="addInfo">Ajouter</button>
                     </div>
                 </div>
-
             </div>
         </main>
 

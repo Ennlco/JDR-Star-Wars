@@ -140,16 +140,16 @@ main{
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    height: 1100px;
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 .modaleAdd{
     position: absolute;
     top: 0;
     left: 0;
-    transform: translate(90%, 20%);
-    width: 32%;
+    transform: translate(40%, 20px);
+    width: 50%;
     padding: 20px;
     background-color: rgba(128, 128, 128, 0.3);
     border: 1px solid rgb(255, 196, 0);
@@ -165,11 +165,15 @@ main{
     margin: 0;
 }
 
-.modalContent{
+.modalContent, .optionChoix{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+
+.optionChoix{
+ width: 100%;
 }
 
 .modaleAdd label{
@@ -197,7 +201,7 @@ main{
     font-size: 16px;
 }
 
-.addOnglet{
+.addOnglet, .sousCatResumer{
     width: 80%;
 }
 
@@ -211,11 +215,11 @@ main{
     border-bottom: 1px solid rgb(255, 196, 0);
 }
 
-.middle, .ongletPerso, .bottom{
+.ongletPerso, .sousCatResumer, .bottom, .addComtenuPerso, .addComtenuBest, 
+.addComtenuResumer, .addComtenuResumerBidon, .addComtenuEnregistrement{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
     margin-top: 20px;
     padding-bottom: 20px;
     border-bottom: 1px solid rgb(255, 196, 0);
@@ -240,4 +244,88 @@ main{
     border: 1px solid rgb(255, 196, 0);
     border-radius: 10px;
     background-color: rgba(128, 128, 128, 0.3);
+}
+
+.addComtenuPerso, .addComtenuBest, .addComtenuResumer, 
+.addComtenuResumerBidon, .addComtenuEnregistrement{
+    width: 100%;
+}
+
+.infoSecondaire{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 33% 67%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.previewImage{
+    display: none;
+    width: 193px;
+    height: 193px;
+    border: 1px solid rgb(255, 196, 0);
+}
+
+.fileImage, .fileImageMonstre{
+    display: flex;
+	width: 193px;
+    height: 193px;
+}
+
+input[type="file"]{
+    display: flex;
+    height: 0;
+    width: 0;
+    overflow: hidden;
+
+}
+
+input[type="file"] + .labelFile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	width: 100%;
+    height: 193px;
+    border: 1px solid rgb(255, 196, 0);
+    font-size: 20px;
+}
+
+.inputSecondaire{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    gap: 3px;
+}
+.inputSecondaire input[type="text"]{
+    width: 95%;
+}
+
+textarea{
+    background-color: rgb(66, 66, 66);
+    color: rgb(255, 196, 0);
+    padding: 5px;
+    font-size: 16px;
+    width: 100%;
+    border-color: rgb(255, 196, 0);
+}
+
+.fileImageMonstre{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+.addComtenuResumer label{
+    margin-top: 10px;
+}
+
+input[type="file"] + .labelFilePDF{
+    padding: 10px;
+    border: 1px solid rgb(255, 196, 0);
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.2);
+    margin-top: 15px;
+}
+
+.addComtenuEnregistrement input{
+    margin-bottom: 20px;
 }
