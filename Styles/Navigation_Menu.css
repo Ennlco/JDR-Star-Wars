@@ -40,10 +40,10 @@ nav{
 @media (max-width: 1000px){
 
     .navigation, .imgNavL, .imgNavR{
-        display: none;
+        display: flex;
     }
 
     .navMoblile{
-        display: flex;
+        display: none;
     }
 }
