@@ -1,7 +1,22 @@
 @media screen and (max-width: 935px) {
 
+    .ordiTablette{
+        display: none;
+    }
+    .mobile{
+        display: flex;
+    }
+
+    .imgFooterOrdi{
+        display: none;
+    }
+    .imgFooterTel{
+        display: flex;
+        width: 100%;
+        padding-bottom: 20px;
+    }
+
     .box_connection{
-        transform: translate(0px, 15%) ;
         width: 100%;
         border: none;
         border-radius: 0;
@@ -23,31 +38,48 @@
         gap: 7%;
     }
 
-    /*.FondFooter img{
-        display: none;
-    }*/
-
-
-    .contentBarreAnimation{
-        padding: 10px;
-        border-top: 5px goldenrod;
-        bottom: 15px;
-        left: 15%;
-    }
-
-    .conteneur{
+    .barre1, .barre2, .barre3, .barre4, .barre5, .barre6, .barre7, .barre8, .barre9, .barre10, .barre11, .barre12, .barre13{
         display: none;
     }
 
-    .conteneurShadow{
+    .barre32, .barre33, .barre34, .barre35, .barre36, .barre37, .barre38, .barre39, .barre40, .barre41, .barre42{
         display: none;
     }
 
+    .Shadow1, .Shadow2, .Shadow3, .Shadow4, .Shadow5, .Shadow6, .Shadow7, .Shadow8, .Shadow9, .Shadow10, .Shadow11, .Shadow12, .Shadow13{
+        display: none;
+    }
+
+    .Shadow32, .Shadow33, .Shadow34, .Shadow35, .Shadow36, .Shadow37, .Shadow38, .Shadow39, .Shadow40, .Shadow41, .Shadow42{
+        display: none;
+    }
 }
 
-@media screen and (max-width: 440px) {
+@media screen and (max-width: 450px) {
 
     .box_connection{
-        transform: translate(0px, 35%) ;
+        padding: 0px;
+        padding-top: 5px;
     }
+
+    .imgFooterTel{
+        padding-bottom: 40px;
+    }
+
+    .barre1, .barre2, .barre3, .barre4, .barre5, .barre6, .barre7, .barre8, .barre9, .barre10, .barre11, .barre12, .barre13, .barre14, .barre15, .barre16, .barre17, .barre18, .barre19, .barre20{
+        display: none;
+    }
+
+    .barre32, .barre33, .barre34, .barre35, .barre36, .barre37, .barre38, .barre39, .barre40{
+        display: none;
+    }
+
+    .Shadow1, .Shadow2, .Shadow3, .Shadow4, .Shadow5, .Shadow6, .Shadow7, .Shadow8, .Shadow9, .Shadow10, .Shadow11, .Shadow12, .Shadow13, .Shadow14, .Shadow15, .Shadow16, .Shadow17, .Shadow18, .Shadow19, .Shadow20{
+        display: none;
+    }
+
+    .Shadow32, .Shadow33, .Shadow34, .Shadow35, .Shadow36, .Shadow37, .Shadow38, .Shadow39, .Shadow40{
+        display: none;
+    }
+
 }

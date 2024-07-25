@@ -2,8 +2,11 @@
 <html lang="fr">
     <head>
         <meta charset="utf-8">
+        
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
         <title>JDR Star Wars</title>
+        
         <link rel="stylesheet" href="Styles/Style.css">
         <link rel="stylesheet" href="Styles/Connection/Page_connection.css"/>
         <link rel="stylesheet" href="Styles/Connection/Popup_New_Compte.css">
@@ -24,7 +27,8 @@
     <body>
         <header>
             <div class="fondHeadert">
-                <img src="Ressource/Image/Headert_Fond.png" alt="En tête Star Wars">
+                <img src="Ressource/Image/Headert_Fond.png" alt="En tête Star Wars" class="ordiTablette">
+                <img src="Ressource/Image/Headert_Fond_Tel.png" alt="En tête Star Wars pour mobile" class="mobile">
             </div>
         </header>
 
@@ -52,10 +56,11 @@
         </main>
 
         <footer>
-            <div class="FondFooter">
-                <img src="Ressource/Image/Footer_Fond.png" alt="Bas de Page Star Wars">
-            </div>
             <div class="contentBarreAnimation">
+                <div class="imgFooter">
+                    <img src="Ressource/Image/Footer_Fond.png" alt="fond footer star wars" class="imgFooterOrdi">
+                    <img src="Ressource/Image/Footer_Fond_Tel.png" alt="fond footer star wars pour mobile" class="imgFooterTel">
+                </div>
                 <div class="conteneur">
                     <div class="barre barre1"></div>
                     <div class="barre barre2"></div>
@@ -147,9 +152,9 @@
             <div class="popupNewCompte">
                 <h2>Créez votre compte</h2>
                 <form action="#" method="get">
-                    <label for="email">Votre adresse mail</label>
+                    <label for="popupEmail">Votre adresse mail</label>
                     <input type="text" id="popupEmail" name="email" placeholder="Ex: Star.Wars@gmail.com" required>
-                    <label for="motdepasse">Mot de Passe</label>
+                    <label for="popupMotDePasse">Mot de Passe</label>
                     <input type="text" name="motdepasse" id="popupMotDePasse" required>
                     <button id="btnCreerCompte" class="btnCreerCompte">Créez</button>
                 </form>

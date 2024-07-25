@@ -1,18 +1,7 @@
-@media screen and (max-width: 1540px) {
+@media screen and (max-width: 1570px) {
     
     .box_connection{
-        transform: translate(0, 25%) ;
         width: 60%;
-    }
-
-    .FondFooter{
-        position:fixed;
-        bottom: 0px;
-    }
-
-    .contentBarreAnimation{
-        left: 28%;
-        bottom: -40px;
     }
 
     .barre1, .barre2, .barre3, .barre4, .barre5, .barre6, .barre7{
@@ -33,24 +22,50 @@
 
 }
 
+@media screen and (max-width: 1240px){
+
+    .imgFooterOrdi{
+        padding-bottom: 20px;
+    }
+
+    .barre1, .barre2, .barre3, .barre4, .barre5, .barre6, .barre7, .barre8, .barre9, .barre10, .barre11{
+        display: none;
+    }
+
+    .Shadow1, .Shadow2, .Shadow3, .Shadow4, .Shadow5, .Shadow6, .Shadow7, .Shadow8, .Shadow9, .Shadow10, .Shadow11{
+        display: none;
+    }
+
+}
+
 @media screen and (max-width: 1024px) {
 
     .box_connection{
-        transform: translate(0, 10%) ;
         width: 70%;
     }
 
-    .FondFooter{
-        position:initial;
-        bottom: 0px;
+    .barre1, .barre2, .barre3, .barre4, .barre5, .barre6, .barre7, .barre8, .barre9, .barre10{
+        display: none;
     }
 
-    .conteneur{
+    .barre32, .barre33, .barre34, .barre35, .barre36, .barre37, .barre38, .barre39, .barre40, .barre41{
+        display: none;
+    }
+
+    .Shadow1, .Shadow2, .Shadow3, .Shadow4, .Shadow5, .Shadow6, .Shadow7, .Shadow8, .Shadow9, .Shadow10{
+        display: none;
+    }
+
+    .Shadow32, .Shadow33, .Shadow34, .Shadow35, .Shadow36, .Shadow37, .Shadow38, .Shadow39, .Shadow40, .Shadow41{
+        display: none;
+    }
+
+    /*.conteneur{
         display: none;
     }
 
     .conteneurShadow{
         display: none;
-    }
+    }*/
 
 }

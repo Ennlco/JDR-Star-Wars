@@ -1,82 +1,115 @@
-const modale = document.querySelector(".groundModale")
-const btnOpen = document.getElementById("open")
-const btnClose = document.querySelector(".closeModale")
-//btnAjoutOnglet = document.getElementById("addInfo")
+const modale = document.querySelector(".groundModale");
+const btnOpen = document.getElementById("open");
+const btnClose = document.querySelector(".closeModale");
+//btnAjoutOnglet = document.getElementById("addInfo");
 
 btnOpen.addEventListener("click", () =>{
-    modale.style.display = "flex"
+    modale.style.display = "flex";
 })
 
 btnClose.addEventListener("click", () =>{
-    cacherModale()
-    resetOnglet()
+    cacherModale();
+    resetModale();
 })
 
 function cacherModale(){
-    modale.style.display = "none"
+    modale.style.display = "none";
 }
 
-function resetOnglet(){
-    inputModale = document.querySelectorAll(".modalContent input")
-    selectModale = document.querySelectorAll(".modalContent select")
-    textareaModale = document.querySelectorAll(".modalContent textarea")
+function resetModale(){
+    const inputModale = document.querySelectorAll(".modalContent input");
+    const selectModale = document.querySelectorAll(".modalContent select");
+    const textareaModale = document.querySelectorAll(".modalContent textarea");
+    const preview = document.querySelector(".previewImage");
+    const divFile = document.querySelector(".fileImage");
+    const btnImage = document.getElementById("file");
 
     for(i = 0; i < inputModale.length; i++){
-        inputModale[i].value = ""
+        inputModale[i].value = "";
     }
     for(i = 0; i < selectModale.length; i++){
-        selectModale[i].value = ""
+        selectModale[i].value = "";
     }
     for(i = 0; i < textareaModale.length; i++){
-        textareaModale[i].value = ""
+        textareaModale[i].value = "";
     }
     
-    optionChoix.innerHTML = ""
+    optionChoix.innerHTML = "";
+    preview.innerHTML = "";
+
+    btnImage.style.display = "flex";
+    divFile.style.display = "flex";
+    preview.style.display = "none";
 }
 
 function afficherOption(){
-    choixCategorie = document.getElementById("chooseSelect")
+    choixCategorie = document.getElementById("chooseSelect");
 
     choixCategorie.addEventListener("change", () =>{
         
-        choixCategorieValue = choixCategorie.value
+        choixCategorieValue = choixCategorie.value;
 
         if(choixCategorieValue == ""){
-            optionChoix.innerHTML = ""
+            optionChoix.innerHTML = "";
         }
         if(choixCategorieValue == "1"){
-            generationOptionPerso()
+            generationOptionPerso();
+            previewImage();
         }
         if(choixCategorieValue == "2"){
-            generationOptionBest()
+            generationOptionBest();
         }
         if(choixCategorieValue == "3"){
-            generationOptionResumer()
+            generationOptionResumer();
         }
-    })
+    });
 
     
 }
 
 function optionResumer(){
-    choixSousCatResumer = document.getElementById("categoryLessResumer")
+    choixSousCatResumer = document.getElementById("categoryLessResumer");
 
     choixSousCatResumer.addEventListener("change", () =>{
-        const divContenu = document.querySelector(".addComtenuResumer")
+        const divContenu = document.querySelector(".addComtenuResumer");
 
         if(choixSousCatResumer.value == ""){
-            divContenu.innerHTML = ""
+            divContenu.innerHTML = "";
         }
         if(choixSousCatResumer.value == "1"){
-            generationOptionResumer1()
+            generationOptionResumer1();
         }
         if(choixSousCatResumer.value == "2"){
-            generationOptionResumer2()
+            generationOptionResumer2();
         }
         if(choixSousCatResumer.value == "3"){
-            generationOptionResumer3()
+            generationOptionResumer3();
         }
-    })
+    });
+}
+
+function previewImage(){
+    const preview = document.querySelector(".previewImage");
+    const divFile = document.querySelector(".fileImage");
+    const btnImage = document.getElementById("file");
+
+    btnImage.addEventListener("change", () =>{
+        const curFiles = btnImage.files;
+
+        if(curFiles.length > 0){
+            preview.innerHTML = "";
+
+            const imgPreview = document.createElement("img");
+            imgPreview.src = URL.createObjectURL(curFiles[0]);
+            imgPreview.style.width = "100%";
+            preview.appendChild(imgPreview);
+
+            btnImage.style.display = "none";
+            divFile.style.display = "none";
+            preview.style.display = "flex";
+        }
+    });
+
 }
 
 /*btnAjoutOnglet.addEventListener("click", () =>{
@@ -133,5 +166,5 @@ function ajoutOnglet(){
 
 
 ajoutOnglet()*/
-cacherModale()
-afficherOption()
+cacherModale();
+afficherOption();

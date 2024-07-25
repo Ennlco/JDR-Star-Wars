@@ -1,23 +1,22 @@
 *{
     font-family: "Anta", sans-serif;
+    color: darkgoldenrod;
 }
 
 video{
-    object-fit: cover;
-    box-shadow: 0 0 5px 1px darkgoldenrod;
+    border: 1px solid darkgoldenrod;
 }
 
 .videoIntro{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 10%;
+    margin-top: 5%;
 }
 
 h2{
     margin-top: 30px;
     font-size: 2em; 
-    color: darkgoldenrod;
     text-align: center;
 }
 
@@ -27,11 +26,7 @@ h2{
     align-items: center;
     flex-direction: column;
     margin-top: 50px;
-}
-
-p{  
     font-size: 1.2em; 
-    color: darkgoldenrod;
 }
 
 .pdf{
@@ -40,12 +35,12 @@ p{
     flex-direction: column;
     margin-top: 10px;
     color: brown;
+    font-size: 1.2em;
 }
 
 .session{
 
     font-size: 1.5em; 
-    color: darkgoldenrod;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -61,7 +56,6 @@ input{
     border-radius: 3px;
     background-color: rgba(128, 128, 128, 0.3);
     font-size: 1.2em; 
-    color: darkgoldenrod;
     box-shadow: 0 0 5px 1px darkgoldenrod;
 }
 

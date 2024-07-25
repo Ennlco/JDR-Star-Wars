@@ -15,7 +15,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Anta&display=swap" rel="stylesheet">
 
-        <script src="JavaScript/Personnage/Personnage_Image.js" defer></script>
+        <script src="JavaScript/Personnage/Personnage.js" defer></script>
     </head>
     <body>
         <header>
@@ -27,6 +27,14 @@
                 <a href="Page_Magazin.html"><img src="Ressource/Image/Picto/Picto_Magazin.png" alt="Pictogramme menu magazin" class="navigationImage"></a>
                 <a href="Page_Codex.html"><img src="Ressource/Image/Picto/Picto_Codex.png" alt="Pictogramme menu codex" class="navigationImage"></a>
             </nav>
+            <nav class="navMoblile">
+                <a href="Page_Accueil.html">Accueil</a>
+                <a href="Page_Personnage.html">Personnage</a>
+                <a href="Page_Vaisseau.html">vaisseau</a>
+                <a href="Page_Carte.html">Carte</a>
+                <a href="Page_Magazin.html">Magasin</a>
+                <a href="Page_Codex.html">Codex</a>
+            </nav>
             <div>
                 <img src="Ressource/Image/HeadertNav_Fond.png" alt="En tête navigation Star Wars" class="fondNav">
             </div>
@@ -34,30 +42,35 @@
 
         <main>
             <Section class="enTete">
+                <div class="previewImage"></div>
                 <div class="imagePerso">
+                    <input type="file" id="file" accept="image/*">
+                    <label for="file" class="labelFile">+ Ajouter photo</label>
                 </div>
-                <div class="infoText2">
-                    <label for="Champ">Niveau :</label>
-                    <input type="text" class="Champ" placeholder="6">
-                    <br>
-                    <label for="Champ">Orientation :</label>
-                    <input type="text" class="Champ" placeholder="Neutre">
-                    <br>
-                    <label for="Champ">Point de dépassement :</label>
-                    <input type="text" class="Champ" placeholder="2">
-                </div>
-                <div class="infoText">
-                    <label for="Champ">Nom du personnage :</label>
-                    <input type="text" class="Champ" placeholder="Nix">
-                    <br>
-                    <label for="Champ">Joueur :</label>
-                    <input type="text" name="Champ" class="Champ" placeholder="Etienne">
-                    <br>
-                    <label for="Champ">Espèce :</label>
-                    <input type="text" class="Champ" placeholder="Zabrack">
-                    <br>
-                    <label for="Champ">Spécialité :</label>
-                    <input type="text" class="ChampSpecialite" placeholder="Guerrier et manipulateur de la force">
+                <div class="textTop">
+                    <div class="infoText2">
+                        <label for="Champ">Niveau :</label>
+                        <input type="text" class="Champ" placeholder="6">
+                        <br>
+                        <label for="Champ">Orientation :</label>
+                        <input type="text" class="Champ" placeholder="Neutre">
+                        <br>
+                        <label for="Champ">Point de dépassement :</label>
+                        <input type="text" class="Champ" placeholder="2">
+                    </div>
+                    <div class="infoText">
+                        <label for="Champ">Nom du personnage :</label>
+                        <input type="text" class="Champ" placeholder="Nix">
+                        <br>
+                        <label for="Champ">Joueur :</label>
+                        <input type="text" name="Champ" class="Champ" placeholder="Etienne">
+                        <br>
+                        <label for="Champ">Espèce :</label>
+                        <input type="text" class="Champ" placeholder="Zabrack">
+                        <br>
+                        <label for="Champ">Spécialité :</label>
+                        <input type="text" class="ChampSpecialite" placeholder="Guerrier et manipulateur de la force">
+                    </div>
                 </div>
             </Section>
             <table class="pv">
@@ -354,6 +367,7 @@
                     <img src="Ressource/Image/Picto/Picto_Credit.png" alt="Pictogramme Credit" class="pictoCredit">
                 </div>
             </section>
+            <button type="button" class="btnModification" id="btnModif">M</button>
         </main>
 
         <footer>

@@ -3,11 +3,11 @@ function choixBarre(){
     const personnage = document.getElementById("personnage")
     const bestiaire = document.getElementById("bestiaire")
     const resumer = document.getElementById("resumer")
+    
     let Persoactif = false
     let Bestactif = false
     let Resactif = false
     
-
     for(i = 0; i < btnBarre.length; i++){
         btnBarre[i].addEventListener("click", (event) =>{
             
@@ -172,6 +172,7 @@ function choixInfoPersoRep(){
             let corpsE = document.createElement("p")
             corpsE.innerText = InfoPersoRepublique[clickId].corps
             divBase.appendChild(corpsE)
+
         })
     }
 }
