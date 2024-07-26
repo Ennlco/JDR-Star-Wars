@@ -60,14 +60,14 @@
     .box_connection{
         padding: 0px;
         padding-top: 5px;
-        margin: 50px auto;
+        margin: 80px auto;
     }
 
     .imgFooterTel{
         padding-bottom: 40px;
     }
 
-    .barre1, .barre2, .barre3, .barre4, .barre5, .barre6, .barre7, .barre8, .barre9, .barre10, .barre11, .barre12, .barre13, .barre14, .barre15, .barre16, .barre17, .barre18, .barre19, .barre20{
+    .barre1, .barre2, .barre3, .barre4, .barre5, .barre6, .barre7, .barre8, .barre9, .barre10, .barre11, .barre12, .barre13, .barre14, .barre15, .barre16, .barre17, .barre18, .barre19, .barre20, .barre21, .barre22{
         display: none;
     }
 
@@ -75,7 +75,7 @@
         display: none;
     }
 
-    .Shadow1, .Shadow2, .Shadow3, .Shadow4, .Shadow5, .Shadow6, .Shadow7, .Shadow8, .Shadow9, .Shadow10, .Shadow11, .Shadow12, .Shadow13, .Shadow14, .Shadow15, .Shadow16, .Shadow17, .Shadow18, .Shadow19, .Shadow20{
+    .Shadow1, .Shadow2, .Shadow3, .Shadow4, .Shadow5, .Shadow6, .Shadow7, .Shadow8, .Shadow9, .Shadow10, .Shadow11, .Shadow12, .Shadow13, .Shadow14, .Shadow15, .Shadow16, .Shadow17, .Shadow18, .Shadow19, .Shadow20, .Shadow21, .Shadow22{
         display: none;
     }
 
