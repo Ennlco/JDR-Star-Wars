@@ -111,9 +111,6 @@ footer{
 
 @media screen and (max-width: 1024px) {
 
-    .box_connection{
-        width: 70%;
-    }
 
     .barre1, .barre2, .barre3, .barre4, .barre5, .barre6, .barre7, .barre8, .barre9, .barre10{
         display: none;
@@ -133,6 +130,15 @@ footer{
 }
 
 @media screen and (max-width: 935px) {
+
+    .imgFooterOrdi{
+        display: none;
+    }
+    .imgFooterTel{
+        display: flex;
+        width: 100%;
+        padding-bottom: 20px;
+    }
 
     .barre1, .barre2, .barre3, .barre4, .barre5, .barre6, .barre7, .barre8, .barre9, .barre10, .barre11, .barre12, .barre13{
         display: none;

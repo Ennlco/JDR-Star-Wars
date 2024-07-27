@@ -45,7 +45,7 @@ h2{
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin-top: 100px;
+    margin-top: 50px;
 }
 
 form{
@@ -57,6 +57,34 @@ input{
     background-color: rgba(128, 128, 128, 0.3);
     font-size: 1.2em; 
     box-shadow: 0 0 5px 1px darkgoldenrod;
+}
+
+@media screen and (max-width: 450px) {
+    
+    .textDebut{
+        margin-top: 30px;
+    }
+    
+    .pdf{
+        row-gap: 15px;
+    }
+    
+    .session{
+        flex-direction: column;
+        font-size: 1.2em;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+    
+    form{
+        display: flex;
+        flex-direction: row;
+    }
+    input{
+        margin-top: -20px;
+        font-size: 1em; 
+    }
+
 }
 
 

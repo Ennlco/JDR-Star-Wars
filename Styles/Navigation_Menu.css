@@ -11,7 +11,8 @@ header{
 
 .imgNavL, .imgNavR{
     width: 10%;
-    padding-top: 40px;
+    height: 25px;
+    padding-top: 30px;
 }
 
 .imgNavL img, .imgNavR img{
@@ -19,7 +20,7 @@ header{
 }
 
 
-nav{
+.navigation{
     display: flex;
     justify-content: center;
     gap: 30px;
@@ -30,20 +31,61 @@ nav{
     transition-duration: 200ms;
 }
 .navigationImage:hover{
-    transform: scale(0.85) ;
+    transform: scale(0.85);
+}
+
+.imgNavL, .imgNavR{
+    display: flex;
 }
 
 .navMoblile{
     display: none;
 }
 
-@media (max-width: 1000px){
+@media (max-width: 935px){
 
+    header{
+        margin-top: 0px;
+    }
     .navigation, .imgNavL, .imgNavR{
-        display: flex;
+        display: none;
     }
 
     .navMoblile{
-        display: none;
+        display: flex;
+        justify-content: center;
+        width: 99%;
+        height: 50px;
+        border: 1px solid darkgoldenrod;
+        border-radius: 10px;
+        background-color: rgba(0, 0, 0, 0.6);
+        position: fixed;
+        top: 0px;
+        z-index: 6;
     }
+
+    .choixNavigation{
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.9);
+        width: 99%;
+        padding-bottom: 15px;
+        position: absolute;
+        top: 51px;
+    }
+
+    .choixNavigation a{
+        font-family: "Anta", sans-serif;
+        text-decoration: none;
+        width: 60%;
+        color: darkgoldenrod;
+        font-size: 35px;
+        font-weight: bold;
+        margin-top: 20px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid darkgoldenrod;
+    }
+
 }
