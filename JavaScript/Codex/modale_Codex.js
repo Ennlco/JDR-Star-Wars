@@ -43,11 +43,11 @@ function resetModale(){
 }
 
 function afficherOption(){
-    choixCategorie = document.getElementById("chooseSelect");
+    let choixCategorie = document.getElementById("chooseSelect");
 
     choixCategorie.addEventListener("change", () =>{
         
-        choixCategorieValue = choixCategorie.value;
+        let choixCategorieValue = choixCategorie.value;
 
         if(choixCategorieValue == ""){
             optionChoix.innerHTML = "";

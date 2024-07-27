@@ -10,7 +10,7 @@ main{
 }
 
 .enTete{
-    width: 90%;
+    width: 70%;
     display: flex;
     justify-content: space-between;
     margin-top: 100px;
@@ -85,7 +85,6 @@ input{
 .pv{
     text-align: center;
     margin-top: 80px;
-    margin-left: 40px;
 }
 .pvTitre{
     font-size: 1.7em;
@@ -110,8 +109,14 @@ th, tr, td{
     display: grid;
     margin-top: 100px;
     grid-template-columns: 50% 50%;
+    column-gap: 20px;
     justify-content: center;
-    align-items: center;
+}
+
+.corp div, .competence div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .caracteristiques{
@@ -150,7 +155,6 @@ button{
 }
 
 .competence{
-    width: 90%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin-top: 100px;
@@ -165,7 +169,7 @@ button{
     color: white;
 }
 .inputArmure, .inputArme{
-    width: 500px;
+    width: 100%;
     font-size: 1.2em;
     color: goldenrod;
 }
@@ -174,6 +178,10 @@ button{
     border-collapse: collapse ;
     text-align: center;
 }
+.tableArme input{
+    margin-bottom: 0px;
+}
+
 .trArme, .thArme, .tdArme{
     border: 1px solid darkgoldenrod;
     padding: 15px;
@@ -187,13 +195,13 @@ button{
     color: goldenrod;
 }
 .inputAttaque{
-    width: 220px;
+    width: 100%;
 }
 .inputDegat{
-    width: 380px;
+    width: 100%;
 }
 .inputType{
-    width: 100px;
+    width: 100%;
 }
 
 h2{
@@ -204,12 +212,15 @@ textarea{
     border: 1px solid darkgoldenrod;
     border-radius: 5px;
     background-color: rgba(128, 128, 128, 0.2);
-    font-size: 1.2em;
     color: goldenrod;
 }
 
 .pouvoir{
     margin-top: 100px;
+}
+
+.pouvoir textarea{
+    width: 95%;
 }
 
 .inventaireCredit{

@@ -1,3 +1,10 @@
+@media (max-width: 1560px){
+
+    .enTete{
+        width: 90%;
+    }
+}
+
 @media (max-width: 1260px){
 
     .enTete{
@@ -41,10 +48,41 @@
 
 }
 
-@media (max-width: 500px) {
+@media (max-width: 935px) {
     
+    main{
+        width: 100%;
+        padding: 0;
+    }
+
     .enTete{
         width: 100%;
+        margin-top: 10px;
+    }
+
+    .infoText, .infoText2{
+        font-size: 20px;
+    }
+
+    .textTop{
+        column-gap: 0px;
+    }
+
+    .pv, .corp, .inventaireCredit{
+        margin-top: 50px;
+    }
+
+    .corp{
+        width: 100%;
+    }
+
+    .corp div{
+        width: 100%;
+    }
+
+    .caracTitre, .caracElement, .trArme, input, .inputArmureText, .inputArmeText, 
+    h2, .trArme, .thArme, .tdArme{
+        font-size: 16px;
     }
 }
 

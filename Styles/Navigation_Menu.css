@@ -46,6 +46,7 @@ header{
 
     header{
         margin-top: 0px;
+        margin-bottom: 0px;
     }
     .navigation, .imgNavL, .imgNavR{
         display: none;
@@ -80,7 +81,7 @@ header{
         font-family: "Anta", sans-serif;
         text-decoration: none;
         width: 60%;
-        color: darkgoldenrod;
+        color: goldenrod;
         font-size: 35px;
         font-weight: bold;
         margin-top: 20px;

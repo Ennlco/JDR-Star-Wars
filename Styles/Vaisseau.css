@@ -6,6 +6,10 @@
     margin-top: 100px;
 }
 
+.vueGlobalMobile{
+    display: none;
+}
+
 .vaisseauZone{
     width: 95%;
     transition-duration: 200ms
@@ -58,64 +62,56 @@ h2{
     color: darkgoldenrod;
 }
 
-.kinSelection{
-    display: none;
-    width: 100%;
-    transform: translate(0,-100%);
-    z-index: 2;
-}
-.lizanSelection{
-    display: none;
-    width: 100%;
-    transform: translate(0,-100%);
-    z-index: 2;
-}
-.reacteurSelection{
-    display: none;
-    width: 100%;
-    transform: translate(0,-100%);
-    z-index: 2;
-}
-.communeSelection{
-    display: none;
-    width: 100%;
-    transform: translate(0,-100%);
-    z-index: 2;
-}
-.stockageSelection{
-    display: none;
-    width: 100%;
-    transform: translate(0,-100%);
-    z-index: 2;
-}
-.reunionSelection{
-    display: none;
-    width: 100%;
-    transform: translate(0,-100%);
-    z-index: 2;
-}
-.medicaleSelection{
-    display: none;
-    width: 100%;
-    transform: translate(0,-100%);
-    z-index: 2;
-}
-.pilotageSelection{
+.kinSelection, .lizanSelection, .reacteurSelection, .communeSelection, .stockageSelection,
+.reunionSelection, .medicaleSelection, .pilotageSelection{
     display: none;
     width: 100%;
     transform: translate(0,-100%);
     z-index: 2;
 }
 
-@media screen and (max-width: 1024px){
-    
+@media screen and (max-width: 936px){
+
     .vueGlobal{
+        display: none;
+    }
+    
+    .vueGlobalMobile{
         display: flex;
+        flex-direction: column;
+        margin-top: 30px;
     }
 
     .carteVaisseau{
-        margin-top: 400px;
+        margin-top: 0px;
     }
 
+    select{
+        margin-top: 20px;
+        height: 35px;
+        padding: 5px;
+        font-family: "Anta", sans-serif;
+        background-color: black;
+        color: goldenrod;
+        border: 1px solid darkgoldenrod;
+        border-radius: 5px;
+    }
+
+    .imgSelect{
+        position: absolute;
+        z-index: 2;
+        width: 95%; 
+        transform: translate(-5px,-285px);
+    }
+
+    h2{
+        font-size: 24px;
+    }
+
+    textarea{
+        width: 90%;
+        height: 100px;
+    }
+    
 }
 

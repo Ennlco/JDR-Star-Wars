@@ -1,6 +1,3 @@
-main{
-    min-height: 600px;
-}
 
 .shopMenu{
     display: flex;
@@ -10,6 +7,9 @@ main{
     justify-content: center;
     gap: 30px;
     margin-top: 40px;
+}
+.shopMenuMobile{
+    display: none;
 }
 button{
     font-family: "Anta", sans-serif;
@@ -39,26 +39,15 @@ button{
     flex-direction: column;
     justify-content: center;
 }
-.choixShopts{
-    display: none;
-}
 
 .choix_1{
     display: flex;
     justify-content: space-around;
 }
-.choix_2{
-    display: flex;
-    justify-content: center;
-}
-
 
 table{
     border-collapse: collapse ;
     margin: auto;
-    margin-top: 30px;
-    margin-left: 10px;
-    margin-right: 10px;
     font-family: "Anta", sans-serif;
     font-style: normal; 
 
@@ -101,9 +90,51 @@ td img{
 
 @media screen and (max-width: 1024px){
 
-    .choix_1, .choix_2{
+    .choix_1{
         justify-content: center;
         flex-direction: column;
 
+    }
+}
+
+@media screen and (max-width: 500px){
+    .shopMenu{
+        display: none;
+    }
+    .shopMenuMobile{
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+        margin-bottom: 15px;
+    }
+    select{
+        width: 95%;
+        padding: 5px;
+        background-color: black;
+        border: 1px solid darkgoldenrod;
+        border-radius: 5px;
+        color: goldenrod;
+        font-family: "Anta", sans-serif;
+    }
+
+    .choixShop{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .choix_1{
+        row-gap: 35px;
+    }
+
+    h2{
+        display: none;
+    }
+
+    table{
+        margin: 0px;
+    }
+
+    th{
+        font-size: 20px;
     }
 }
