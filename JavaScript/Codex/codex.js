@@ -376,4 +376,44 @@ function choixInfoResumer(){
     }
 }
 
+function choixMobile(){
+    let select1 = document.getElementById("selectOnglet")
+
+    select1.addEventListener("change", () =>{
+        
+        if(select1.value == ""){
+            const base = document.querySelector(".optionSecondaire")
+            base.innerHTML = ""
+        }
+        if(select1.value == "1"){
+            const base = document.querySelector(".optionSecondaire")
+            const selectElement = document.createElement("select")
+
+            base.innerHTML = ""
+            selectElement.name = "categorySecondaire"
+            selectElement.id = "categorySecondaire"
+            base.appendChild(selectElement)
+        }
+        if(select1.value == "2"){
+            const base = document.querySelector(".optionSecondaire")
+            const selectElement = document.createElement("select")
+
+            base.innerHTML = ""
+            selectElement.name = "categorySecondaire"
+            selectElement.id = "categorySecondaire"
+            base.appendChild(selectElement)
+        }
+        if(select1.value == "3"){
+            const base = document.querySelector(".optionSecondaire")
+            const selectElement = document.createElement("select")
+
+            base.innerHTML = ""
+            selectElement.name = "categorySecondaire"
+            selectElement.id = "categorySecondaire"
+            base.appendChild(selectElement)
+        }
+    })
+}
+
 choixBarre()
+choixMobile()

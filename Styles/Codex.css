@@ -345,6 +345,8 @@ input[type="file"] + .labelFilePDF{
     }
     .barreChoixMobile{
         display: flex;
+        flex-direction: column;
+        gap: 10px;
     }
 
     .barreChoixMobile select{

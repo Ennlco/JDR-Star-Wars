@@ -194,7 +194,7 @@ function addListenerSelection(){
 
 function selectionChoix(){
     let select = document.getElementById("selectZone")
-    const divBase = document.querySelector(".imageChoix")
+    const divBase = document.querySelector(".vueGlobalMobile div")
 
     select.addEventListener("change", () =>{
         let selectValue = select.value
