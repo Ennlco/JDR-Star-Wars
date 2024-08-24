@@ -1,4 +1,6 @@
-
+*{
+    font-family: "Anta", sans-serif;
+}
 .shopMenu{
     display: flex;
     flex-direction: row;
@@ -11,90 +13,229 @@
 .shopMenuMobile{
     display: none;
 }
-button{
-    font-family: "Anta", sans-serif;
-    font-weight: 400;
-    font-style: normal; 
-    font-size: 2em; 
-    color: rgb(255, 196, 0);
-}
 
 .menuChoix{
     height: 50px;
     width: 220px;
-    background-color: rgba(128, 128, 128, 0.2);
-    border-radius: 7px;
     margin-top: 30px;
+    cursor: pointer;
     text-align: center;
+    background-image: url(../Ressource/Image/btn-Shop.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    color: goldenrod;
+    font-family: "Anta", sans-serif;
+    font-weight: bold;
+    font-size: 22px;
+    border: none;
     transition-duration: 300ms;
 }
 
 .menuChoix:hover{
-    box-shadow: 0 0 2px 1px darkgoldenrod;
-    transform: scale(1.05);
+    transform: scale(1.1);
 }
 
 .choixShop{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.choix_1{
-    display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
+    gap: 60px;
+    margin-top: 60px;
+    padding-top: 50px;
+    border-top: 1px solid goldenrod; 
 }
 
-table{
-    border-collapse: collapse ;
-    margin: auto;
-    font-family: "Anta", sans-serif;
-    font-style: normal; 
-
+.sws-cristal-card{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    border-radius: 20px;
+    background-color: rgba(128, 128, 128, 0.2);
+    transition: 300ms;
 }
 
-h2{
-    text-align: center;
-    padding: 20px;
-    font-family: "Anta", sans-serif;
-    font-style: normal; 
-    color: rgb(255, 196, 0);
-    font-weight: 800;
-    font-size: 4em; 
+.sws-cristal-card:hover{
+    transform: scale(1.1);
 }
 
-th, tr, td{
-    border: 1px solid darkgoldenrod;
-    padding: 15px;
+.sws-cristal-price{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    color: white;
+    background-color: black;
+    border-radius: 0px 20px 0px 20px;
+    width: 94px;
+    height: 30px;
+    transform: translate(219%, 0px);
 }
 
-th{
-    margin-left: 15px;
-    font-weight: 400;
-    font-size: 2em;
-    color: rgb(255, 196, 0);
-}
-td{
-    margin-left: 15px;
-    font-weight: 100;
-    font-size: 1.1em;
-    color: deepskyblue;
-}
-
-.tr img{
+.sws-cristal-price-img{
     width: 30px;
+    height: 30px;
 }
-td img{
-    width: 20px;
+
+.sws-cristal-img{
+    height: 300px;
+    width: 300px;
+    border-radius: 20px 20px 0px 0px;
+    border-bottom: 1px solid goldenrod;
 }
+
+.sws-cristal-nom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 280px;
+    height: 45px;
+    color: cyan;
+    padding: 10px;
+    margin: 0px;
+    border-bottom: 1px solid goldenrod;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+h4{
+    margin: 0px;
+}
+
+p{
+    color: gold;
+}
+
+.sws-cristal-info{
+    color: white;
+    width: 280px;
+    height: 90px;
+    padding: 10px;
+
+}
+
+.sws-cart-ajout{
+    position: absolute;
+    transform: translate(0px,471px);
+    background-color: rgba(0, 0, 0, 0.3);
+    border: none;
+    width: 100px;
+    height: 40px;
+    padding: 0px;
+    border-radius: 0px 10px 0px 20px;
+    color: goldenrod;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.sws-cart-ajout:hover{
+    box-shadow: 0px 0px 15px 1px goldenrod;
+}
+
+.sws-cart-ajout-img{
+    width: 40px;
+    height: 40px;
+    filter: sepia(100%) contrast(100%) brightness(2) drop-shadow(0px 0px 10px goldenrod);
+}
+
+.sws-armure-card{
+    display: flex;
+    flex-direction: column;
+    width: 385px;
+    border-radius: 20px;
+    background-color: rgba(128, 128, 128, 0.2);
+    transition: 300ms;
+}
+
+.sws-armure-card:hover{
+    transform: scale(1.1);
+}
+
+.sws-armure-price{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    color: white;
+    background-color: black;
+    border-radius: 0px 20px 0px 20px;
+    width: 94px;
+    height: 30px;
+    transform: translate(309%, 0px);
+}
+
+.sws-armure-price-img{
+    width: 30px;
+    height: 30px;
+}
+
+.sws-armure-img{
+    width: 385px;
+    height: 300px;
+    border-radius: 20px 20px 0px 0px;
+    border-bottom: 1px solid goldenrod;
+}
+
+.sws-armure-nom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 365px;
+    height: 45px;
+    color: cyan;
+    padding: 10px;
+    margin: 0px;
+    border-bottom: 1px solid goldenrod;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+h4{
+    width: 202px;
+}
+p{
+    width: 100px;
+}
+
+.sws-armure-info{
+    color: white;
+    width: 365px;
+    height: 90px;
+    padding: 10px;
+
+}
+
+.sws-cart-armure-ajout{
+    position: absolute;
+    transform: translate(0px,471px);
+    background-color: rgba(0, 0, 0, 0.3);
+    border: none;
+    width: 100px;
+    height: 40px;
+    padding: 0px;
+    border-radius: 0px 10px 0px 20px;
+    color: goldenrod;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.sws-cart-armure-ajout:hover{
+    box-shadow: 0px 0px 15px 1px goldenrod;
+}
+
+.sws-cart-ajout-armure-img{
+    width: 40px;
+    height: 40px;
+    filter: sepia(100%) contrast(100%) brightness(2) drop-shadow(0px 0px 10px goldenrod);
+}
+
 
 @media screen and (max-width: 1024px){
-
-    .choix_1{
-        justify-content: center;
-        flex-direction: column;
-
-    }
 }
 
 @media screen and (max-width: 500px){
@@ -118,23 +259,40 @@ td img{
     }
 
     .choixShop{
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
         margin-top: 20px;
         margin-bottom: 20px;
     }
 
-    .choix_1{
-        row-gap: 35px;
+    .sws-cristal-card{
+        width: 355px;
     }
 
-    h2{
-        display: none;
+    .sws-cristal-card:hover{
+        transform: scale(1);
     }
 
-    table{
-        margin: 0px;
+    .sws-cristal-img{
+        height: 355px;
+        width: 355px;
     }
 
-    th{
-        font-size: 20px;
+    .sws-cristal-price{
+        transform: translate(278%, 0px);
+    }
+
+    .sws-cristal-nom{
+        width: 335px;
+    }
+
+    .sws-cristal-info{
+        width: 335px;
+    }
+
+    .sws-cart-ajout{
+        transform: translate(0px, 505px);
     }
 }

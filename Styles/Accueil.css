@@ -1,17 +1,38 @@
+
 *{
     font-family: "Anta", sans-serif;
-    color: darkgoldenrod;
+    color: #b8870b;
+}
+.div-content{
+    display: flex;
+    justify-content: center;
 }
 
-video{
+.size-Text{
+    font-size: 24px;
+    text-align: justify;
+}
+
+main{
+    flex-direction: column;
+    align-items: center;
+}
+
+section{
+    width: 100%;
+    margin-top: 5%;
+}
+
+iframe {
+    width: 640px;
+    height: 360px;
     border: 1px solid darkgoldenrod;
+    border-radius: 5px;
 }
 
 .videoIntro{
-    display: flex;
-    justify-content: center;
+    width: 100%;
     align-items: center;
-    margin-top: 5%;
 }
 
 h2{
@@ -21,47 +42,38 @@ h2{
 }
 
 .textDebut{
-    padding: 20px;
+    max-width: 1200px;
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin-top: 50px;
-    font-size: 1.2em; 
 }
 
 .pdf{
-    display: flex;
-    justify-content: center;
     flex-direction: column;
     margin-top: 10px;
     color: brown;
-    font-size: 1.2em;
 }
 
 .session{
-
-    font-size: 1.5em; 
-    display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
-    margin-top: 50px;
 }
 
-form{
-    margin-left: 20px;
-}
 input{
     border: 1px solid darkgoldenrod;
     border-radius: 3px;
     background-color: rgba(128, 128, 128, 0.3);
-    font-size: 1.2em; 
     box-shadow: 0 0 5px 1px darkgoldenrod;
 }
 
 @media screen and (max-width: 450px) {
     
+    .size-Text{
+        font-size: 18px;
+    }
+
     .textDebut{
+        max-width:fit-content;
         margin-top: 30px;
     }
     
@@ -71,20 +83,13 @@ input{
     
     .session{
         flex-direction: column;
-        font-size: 1.2em;
-        margin-top: 20px;
-        margin-bottom: 30px;
+        margin-bottom: 20px;
     }
     
     form{
         display: flex;
         flex-direction: row;
     }
-    input{
-        margin-top: -20px;
-        font-size: 1em; 
-    }
-
 }
 
 

@@ -1,11 +1,15 @@
 function choix(){
 
-    const btnChoix = document.querySelectorAll("button")
+    const btnChoix = document.querySelectorAll("input")
+
 
     for (i = 0; i < btnChoix.length; i++){
         btnChoix[i].addEventListener("click", (event) =>{
-            if ( event.target === btnChoix[0]){
+
+            console.log(event.target)
+            if ( event.target === btnChoix[0] || ''){
                 consomable()
+                console.log('consomable')
             }
 
             if ( event.target === btnChoix[1]){
@@ -38,6 +42,9 @@ function choixMobile(){
     select.addEventListener("change", () =>{
         let selectValue = select.value
 
+        if(selectValue == ""){
+            divBase.innerHTML = ""
+        }
         if(selectValue == "1"){
             consomable()
         }
