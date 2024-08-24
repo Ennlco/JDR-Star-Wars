@@ -267,32 +267,32 @@ p{
         margin-bottom: 20px;
     }
 
-    .sws-cristal-card{
+    .sws-cristal-card, .sws-armure-card{
         width: 355px;
     }
 
-    .sws-cristal-card:hover{
+    .sws-cristal-card:hover, .sws-armure-card:hover{
         transform: scale(1);
     }
 
-    .sws-cristal-img{
+    .sws-cristal-img, .sws-armure-img{
         height: 355px;
         width: 355px;
     }
 
-    .sws-cristal-price{
+    .sws-cristal-price, .sws-armure-price{
         transform: translate(278%, 0px);
     }
 
-    .sws-cristal-nom{
+    .sws-cristal-nom, .sws-armure-nom{
         width: 335px;
     }
 
-    .sws-cristal-info{
+    .sws-cristal-info, .sws-armure-info{
         width: 335px;
     }
 
-    .sws-cart-ajout{
-        transform: translate(0px, 505px);
+    .sws-cart-ajout, .sws-cart-armure-ajout{
+        transform: translate(0px, 524px);
     }
 }

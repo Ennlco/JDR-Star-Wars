@@ -87,6 +87,7 @@ h2{
         height: 277px;
         background-image: url(../Ressource/Image/Vaisseau/VaisseauGlobal.jpg);
         background-size: contain;
+        background-repeat: no-repeat;
         box-shadow: 0 0 15px 1px darkcyan;
     }
 
