@@ -1,10 +1,46 @@
 const divBase = document.getElementById("1")
+const selectCat = document.getElementById("selectCat")
+const range = document.querySelector(".rangePrix")
 
-function consomable(){
+const elmConsomable = consomableList
+const elmVes = vaisseau
+const elmArme = armeList
+const elmArmure = armureList
+const elmCristaux = Cristaux
+const elmModificateur = modificateurList
+
+let consActive = false
+let VesActive = false
+let ArmeActive = false
+let ArmureActive = false
+let CristActive = false
+let ModifActive = false
+
+function consomable(elmConsomable){
+
+    consActive = true
+    VesActive = false
+    ArmeActive = false
+    ArmureActive = false
+    CristActive = false
+    ModifActive = false
 
     divBase.innerHTML = ""
+    selectCat.innerHTML = ""
+    
+    const option = document.createElement("option")
+    option.value = ""
+    option.innerText = "----"
+    selectCat.appendChild(option)
 
-    for (let i = 0; i < consomableList.length; i++) {
+    consomableCat.forEach(item => {
+        const option = document.createElement("option")
+        option.value = item.categorie
+        option.innerText = item.categorie
+        selectCat.appendChild(option)
+    });
+
+    for (let i = 0; i < elmConsomable.length; i++) {
         
         let divContent = document.createElement("div")
         divContent.className = 'sws-cristal-card'
@@ -12,18 +48,18 @@ function consomable(){
 
         let spanPrice = document.createElement("span")
         spanPrice.className = 'sws-cristal-price'
-        spanPrice.innerHTML = consomableList[i].prix
+        spanPrice.innerHTML = elmConsomable[i].prix
         divContent.appendChild(spanPrice)
 
         let imgPrice = document.createElement("img")
         imgPrice.className = 'sws-cristal-price-img'
-        imgPrice.src = consomableList[i].imgCredit
-        imgPrice.alt = `${consomableList[i].prix} Crédit`
+        imgPrice.src = elmConsomable[i].imgCredit
+        imgPrice.alt = `${elmConsomable[i].prix} Crédit`
         spanPrice.appendChild(imgPrice)
 
         let imgCristal = document.createElement("img")
-        imgCristal.src = consomableList[i].image
-        imgCristal.alt = consomableList[i].nom
+        imgCristal.src = elmConsomable[i].image
+        imgCristal.alt = elmConsomable[i].nom
         imgCristal.className = 'sws-cristal-img'
         divContent.appendChild(imgCristal)
 
@@ -32,16 +68,16 @@ function consomable(){
         divContent.appendChild(divContentNom)
 
         let h4 = document.createElement("h4")
-        h4.innerText = consomableList[i].nom
+        h4.innerText = elmConsomable[i].nom
         divContentNom.appendChild(h4)
 
         let p = document.createElement("p")
-        p.innerText = consomableList[i].categorie
+        p.innerText = elmConsomable[i].categorie
         divContentNom.appendChild(p)
 
         let pInfo = document.createElement("p")
         pInfo.className = 'sws-cristal-info'
-        pInfo.innerText = consomableList[i].detail
+        pInfo.innerText = elmConsomable[i].detail
         divContent.appendChild(pInfo)
 
         let button = document.createElement("button")
@@ -51,17 +87,30 @@ function consomable(){
 
         let imgCredit = document.createElement("img")
         imgCredit.className = 'sws-cart-ajout-img'
-        imgCredit.src = consomableList[i].imgCredit
+        imgCredit.src = elmConsomable[i].imgCredit
         imgCredit.alt = "crédit républicain"
         button.appendChild(imgCredit)
     }
 }
 
-function vaisseaux(){
+function vaisseaux(elmVes){
+
+    consActive = false
+    VesActive = true
+    ArmeActive = false
+    ArmureActive = false
+    CristActive = false
+    ModifActive = false
 
     divBase.innerHTML = ""
+    selectCat.innerHTML = ""
 
-    for (let i = 0; i < vaisseau.length; i++) {
+    const option = document.createElement("option")
+    option.value = ""
+    option.innerText = "----"
+    selectCat.appendChild(option)
+
+    for (let i = 0; i < elmVes.length; i++) {
         
         let divContent = document.createElement("div")
         divContent.className = 'sws-cristal-card'
@@ -69,18 +118,18 @@ function vaisseaux(){
 
         let spanPrice = document.createElement("span")
         spanPrice.className = 'sws-cristal-price'
-        spanPrice.innerHTML = vaisseau[i].prix
+        spanPrice.innerHTML = elmVes[i].prix
         divContent.appendChild(spanPrice)
 
         let imgPrice = document.createElement("img")
         imgPrice.className = 'sws-cristal-price-img'
-        imgPrice.src = vaisseau[i].imgCredit
-        imgPrice.alt = `${vaisseau[i].prix} Crédit`
+        imgPrice.src = elmVes[i].imgCredit
+        imgPrice.alt = `${elmVes[i].prix} Crédit`
         spanPrice.appendChild(imgPrice)
 
         let imgCristal = document.createElement("img")
-        imgCristal.src = vaisseau[i].image
-        imgCristal.alt = vaisseau[i].nom
+        imgCristal.src = elmVes[i].image
+        imgCristal.alt = elmVes[i].nom
         imgCristal.className = 'sws-cristal-img'
         divContent.appendChild(imgCristal)
 
@@ -89,12 +138,12 @@ function vaisseaux(){
         divContent.appendChild(divContentNom)
 
         let h4 = document.createElement("h4")
-        h4.innerText = vaisseau[i].nom
+        h4.innerText = elmVes[i].nom
         divContentNom.appendChild(h4)
 
         let pInfo = document.createElement("p")
         pInfo.className = 'sws-cristal-info'
-        pInfo.innerText = vaisseau[i].detail
+        pInfo.innerText = elmVes[i].detail
         divContent.appendChild(pInfo)
 
         let button = document.createElement("button")
@@ -104,17 +153,37 @@ function vaisseaux(){
 
         let imgCredit = document.createElement("img")
         imgCredit.className = 'sws-cart-ajout-img'
-        imgCredit.src = vaisseau[i].imgCredit
+        imgCredit.src = elmVes[i].imgCredit
         imgCredit.alt = "crédit républicain"
         button.appendChild(imgCredit)
     }
 }
 
-function arme(){
+function arme(elmArme){
+
+    consActive = false
+    VesActive = false
+    ArmeActive = true
+    ArmureActive = false
+    CristActive = false
+    ModifActive = false
 
     divBase.innerHTML = ""
+    selectCat.innerHTML = ""
 
-    for (let i = 0; i < armeList.length; i++) {
+    const option = document.createElement("option")
+    option.value = ""
+    option.innerText = "----"
+    selectCat.appendChild(option)
+
+    armeCat.forEach(item => {
+        const option = document.createElement("option")
+        option.value = item.categorie
+        option.innerText = item.categorie
+        selectCat.appendChild(option)
+    });
+
+    for (let i = 0; i < elmArme.length; i++) {
         
         let divContent = document.createElement("div")
         divContent.className = 'sws-cristal-card'
@@ -122,18 +191,18 @@ function arme(){
 
         let spanPrice = document.createElement("span")
         spanPrice.className = 'sws-cristal-price'
-        spanPrice.innerHTML = armeList[i].prix
+        spanPrice.innerHTML = elmArme[i].prix
         divContent.appendChild(spanPrice)
 
         let imgPrice = document.createElement("img")
         imgPrice.className = 'sws-cristal-price-img'
-        imgPrice.src = armeList[i].imgCredit
-        imgPrice.alt = `${armeList[i].prix} Crédit`
+        imgPrice.src = elmArme[i].imgCredit
+        imgPrice.alt = `${elmArme[i].prix} Crédit`
         spanPrice.appendChild(imgPrice)
 
         let imgCristal = document.createElement("img")
-        imgCristal.src = armeList[i].image
-        imgCristal.alt = armeList[i].nom
+        imgCristal.src = elmArme[i].image
+        imgCristal.alt = elmArme[i].nom
         imgCristal.className = 'sws-cristal-img'
         divContent.appendChild(imgCristal)
 
@@ -142,16 +211,16 @@ function arme(){
         divContent.appendChild(divContentNom)
 
         let h4 = document.createElement("h4")
-        h4.innerText = armeList[i].nom
+        h4.innerText = elmArme[i].nom
         divContentNom.appendChild(h4)
 
         let p = document.createElement("p")
-        p.innerText = armeList[i].categorie
+        p.innerText = elmArme[i].categorie
         divContentNom.appendChild(p)
 
         let pInfo = document.createElement("p")
         pInfo.className = 'sws-cristal-info'
-        pInfo.innerText = armeList[i].detail
+        pInfo.innerText = elmArme[i].detail
         divContent.appendChild(pInfo)
 
         let button = document.createElement("button")
@@ -161,17 +230,37 @@ function arme(){
 
         let imgCredit = document.createElement("img")
         imgCredit.className = 'sws-cart-ajout-img'
-        imgCredit.src = armeList[i].imgCredit
+        imgCredit.src = elmArme[i].imgCredit
         imgCredit.alt = "crédit républicain"
         button.appendChild(imgCredit)
     }
 }
 
-function armure(){
+function armure(elmArmure){
+
+    consActive = false
+    VesActive = false
+    ArmeActive = false
+    ArmureActive = true
+    CristActive = false
+    ModifActive = false
 
     divBase.innerHTML = ""
+    selectCat.innerHTML = ""
 
-    for (let i = 0; i < armureList.length; i++) {
+    const option = document.createElement("option")
+    option.value = ""
+    option.innerText = "----"
+    selectCat.appendChild(option)
+
+    armureCat.forEach(item => {
+        const option = document.createElement("option")
+        option.value = item.categorie
+        option.innerText = item.categorie
+        selectCat.appendChild(option)
+    });
+
+    for (let i = 0; i < elmArmure.length; i++) {
         
         let divContent = document.createElement("div")
         divContent.className = 'sws-armure-card'
@@ -179,18 +268,18 @@ function armure(){
 
         let spanPrice = document.createElement("span")
         spanPrice.className = 'sws-armure-price'
-        spanPrice.innerHTML = armureList[i].prix
+        spanPrice.innerHTML = elmArmure[i].prix
         divContent.appendChild(spanPrice)
 
         let imgPrice = document.createElement("img")
         imgPrice.className = 'sws-armure-price-img'
-        imgPrice.src = armureList[i].imgCredit
-        imgPrice.alt = `${armureList[i].prix} Crédit`
+        imgPrice.src = elmArmure[i].imgCredit
+        imgPrice.alt = `${elmArmure[i].prix} Crédit`
         spanPrice.appendChild(imgPrice)
 
         let imgCristal = document.createElement("img")
-        imgCristal.src = armureList[i].image
-        imgCristal.alt = armureList[i].nom
+        imgCristal.src = elmArmure[i].image
+        imgCristal.alt = elmArmure[i].nom
         imgCristal.className = 'sws-armure-img'
         divContent.appendChild(imgCristal)
 
@@ -199,16 +288,16 @@ function armure(){
         divContent.appendChild(divContentNom)
 
         let h4 = document.createElement("h4")
-        h4.innerText = armureList[i].nom
+        h4.innerText = elmArmure[i].nom
         divContentNom.appendChild(h4)
 
         let p = document.createElement("p")
-        p.innerText = armureList[i].categorie
+        p.innerText = elmArmure[i].categorie
         divContentNom.appendChild(p)
 
         let pInfo = document.createElement("p")
         pInfo.className = 'sws-armure-info'
-        pInfo.innerText = armureList[i].detail
+        pInfo.innerText = elmArmure[i].detail
         divContent.appendChild(pInfo)
 
         let button = document.createElement("button")
@@ -218,18 +307,38 @@ function armure(){
 
         let imgCredit = document.createElement("img")
         imgCredit.className = 'sws-cart-ajout-armure-img'
-        imgCredit.src = armureList[i].imgCredit
+        imgCredit.src = elmArmure[i].imgCredit
         imgCredit.alt = "crédit républicain"
         button.appendChild(imgCredit)
     }
 
 }
 
-function cristeaux(){
+function cristeaux(elmCristaux){
+
+    consActive = false
+    VesActive = false
+    ArmeActive = false
+    ArmureActive = false
+    CristActive = true
+    ModifActive = false
 
     divBase.innerHTML = ""
+    selectCat.innerHTML = ""
 
-    for (let i = 0; i < Cristaux.length; i++) {
+    const option = document.createElement("option")
+    option.value = ""
+    option.innerText = "----"
+    selectCat.appendChild(option)
+
+    cristauCat.forEach(item => {
+        const option = document.createElement("option")
+        option.value = item.categorie
+        option.innerText = item.categorie
+        selectCat.appendChild(option)
+    });
+
+    for (let i = 0; i < elmCristaux.length; i++) {
         
         let divContent = document.createElement("div")
         divContent.className = 'sws-cristal-card'
@@ -237,18 +346,18 @@ function cristeaux(){
 
         let spanPrice = document.createElement("span")
         spanPrice.className = 'sws-cristal-price'
-        spanPrice.innerHTML = Cristaux[i].prix
+        spanPrice.innerHTML = elmCristaux[i].prix
         divContent.appendChild(spanPrice)
 
         let imgPrice = document.createElement("img")
         imgPrice.className = 'sws-cristal-price-img'
-        imgPrice.src = Cristaux[i].imgCredit
-        imgPrice.alt = `${Cristaux[i].prix} Crédit`
+        imgPrice.src = elmCristaux[i].imgCredit
+        imgPrice.alt = `${elmCristaux[i].prix} Crédit`
         spanPrice.appendChild(imgPrice)
 
         let imgCristal = document.createElement("img")
-        imgCristal.src = Cristaux[i].image
-        imgCristal.alt = Cristaux[i].nom
+        imgCristal.src = elmCristaux[i].image
+        imgCristal.alt = elmCristaux[i].nom
         imgCristal.className = 'sws-cristal-img'
         divContent.appendChild(imgCristal)
 
@@ -257,16 +366,16 @@ function cristeaux(){
         divContent.appendChild(divContentNom)
 
         let h4 = document.createElement("h4")
-        h4.innerText = Cristaux[i].nom
+        h4.innerText = elmCristaux[i].nom
         divContentNom.appendChild(h4)
 
         let p = document.createElement("p")
-        p.innerText = Cristaux[i].categorie
+        p.innerText = elmCristaux[i].categorie
         divContentNom.appendChild(p)
 
         let pInfo = document.createElement("p")
         pInfo.className = 'sws-cristal-info'
-        pInfo.innerText = Cristaux[i].detail
+        pInfo.innerText = elmCristaux[i].detail
         divContent.appendChild(pInfo)
 
         let button = document.createElement("button")
@@ -276,18 +385,38 @@ function cristeaux(){
 
         let imgCredit = document.createElement("img")
         imgCredit.className = 'sws-cart-ajout-img'
-        imgCredit.src = Cristaux[i].imgCredit
+        imgCredit.src = elmCristaux[i].imgCredit
         imgCredit.alt = "crédit républicain"
         button.appendChild(imgCredit)
     }
 
 }
 
-function modificateur(){
+function modificateur(elmModificateur){
+
+    consActive = false
+    VesActive = false
+    ArmeActive = false
+    ArmureActive = false
+    CristActive = false
+    ModifActive = true
 
     divBase.innerHTML = ""
+    selectCat.innerHTML = ""
 
-    for (let i = 0; i < modificateurList.length; i++) {
+    const option = document.createElement("option")
+    option.value = ""
+    option.innerText = "----"
+    selectCat.appendChild(option)
+
+    modificateurCat.forEach(item => {
+        const option = document.createElement("option")
+        option.value = item.categorie
+        option.innerText = item.categorie
+        selectCat.appendChild(option)
+    });
+
+    for (let i = 0; i < elmModificateur.length; i++) {
         
         let divContent = document.createElement("div")
         divContent.className = 'sws-cristal-card'
@@ -295,18 +424,18 @@ function modificateur(){
 
         let spanPrice = document.createElement("span")
         spanPrice.className = 'sws-cristal-price'
-        spanPrice.innerHTML = modificateurList[i].prix
+        spanPrice.innerHTML = elmModificateur[i].prix
         divContent.appendChild(spanPrice)
 
         let imgPrice = document.createElement("img")
         imgPrice.className = 'sws-cristal-price-img'
-        imgPrice.src = modificateurList[i].imgCredit
-        imgPrice.alt = `${modificateurList[i].prix} Crédit`
+        imgPrice.src = elmModificateur[i].imgCredit
+        imgPrice.alt = `${elmModificateur[i].prix} Crédit`
         spanPrice.appendChild(imgPrice)
 
         let imgCristal = document.createElement("img")
-        imgCristal.src = modificateurList[i].image
-        imgCristal.alt = modificateurList[i].nom
+        imgCristal.src = elmModificateur[i].image
+        imgCristal.alt = elmModificateur[i].nom
         imgCristal.className = 'sws-cristal-img'
         divContent.appendChild(imgCristal)
 
@@ -315,16 +444,16 @@ function modificateur(){
         divContent.appendChild(divContentNom)
 
         let h4 = document.createElement("h4")
-        h4.innerText = modificateurList[i].nom
+        h4.innerText = elmModificateur[i].nom
         divContentNom.appendChild(h4)
 
         let p = document.createElement("p")
-        p.innerText = modificateurList[i].categorie
+        p.innerText = elmModificateur[i].categorie
         divContentNom.appendChild(p)
 
         let pInfo = document.createElement("p")
         pInfo.className = 'sws-cristal-info'
-        pInfo.innerText = modificateurList[i].detail
+        pInfo.innerText = elmModificateur[i].detail
         divContent.appendChild(pInfo)
 
         let button = document.createElement("button")
@@ -334,7 +463,7 @@ function modificateur(){
 
         let imgCredit = document.createElement("img")
         imgCredit.className = 'sws-cart-ajout-img'
-        imgCredit.src = modificateurList[i].imgCredit
+        imgCredit.src = elmModificateur[i].imgCredit
         imgCredit.alt = "crédit républicain"
         button.appendChild(imgCredit)
     }

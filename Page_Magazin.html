@@ -47,7 +47,7 @@
         </header>
 
         <main>
-            <section class="shopMenu">
+            <section class="shopMenu" id="topChoix">
                 <input type="button" value="Consomables" class="menuChoix">
                 <input type="button" value="Vaisseau" class="menuChoix">
                 <input type="button" value="Armes" class="menuChoix">
@@ -66,7 +66,26 @@
                     <option value="6">Modificateurs</option>
                 </select>
             </section>
+            <section class="chooseCat">
+                <select name="selectCat" id="selectCat">
+                    <option value=""></option>
+                </select>
+                <div class="max-min">
+                    <input type="button" value="Prix Max" class="inputPrix" id="Prix-Max">
+                    <input type="button" value="Prix Min" class="inputPrix" id="Prix-Min">
+                </div>
+                <div class="rangePrix">
+                    <input type="range" name="prixRange" id="prixRange" min="0" max="50000" step="500" value="0">
+                    <div class="rangeName">
+                        <p id="prixRangeText">0</p>
+                        <img src="Ressource/Image/Picto/WebP/Picto_Credit.webp" alt="icone Crédit" class="rang-price-img">
+                    </div>
+                </div>
+            </section>
             <div class="choixShop" id="1">               
+            </div>
+            <div class="btn-up">
+                <a href="#topChoix"></a>
             </div>
         </main>
 
