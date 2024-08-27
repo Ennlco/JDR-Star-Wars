@@ -1,195 +1,130 @@
-function afficherSelectionChambreKin(){
-    let selction = document.querySelector(".kinSelection")
-    selction.style.display = "flex"
-}
-function desAfficherSelectionChambreKin(){
-    let selction = document.querySelector(".kinSelection")
-    selction.style.display = "none"
-}
+const select1 = document.getElementById("1")
+const select2 = document.getElementById("2")
+const select3 = document.getElementById("3")
+const select4 = document.getElementById("4")
+const select5 = document.getElementById("5")
+const select6 = document.getElementById("6")
+const select7 = document.getElementById("7")
+const select8 = document.getElementById("8")
 
-function afficherSelectionChambreLizan(){
-    let selction = document.querySelector(".lizanSelection")
-    selction.style.display = "flex"
-}
-function desAfficherSelectionChambreLizan(){
-    let selction = document.querySelector(".lizanSelection")
-    selction.style.display = "none"
-}
+const select = document.querySelectorAll(".slide")
 
-function afficherSelectionReacteur(){
-    let selction = document.querySelector(".reacteurSelection")
-    selction.style.display = "flex"
-}
-function desAfficherSelectionReacteur(){
-    let selction = document.querySelector(".reacteurSelection")
-    selction.style.display = "none"
-}
+const divContent = document.querySelector(".img-content")
+const title = document.querySelector(".nameZone")
 
-function afficherSelectionCommun(){
-    let selction = document.querySelector(".communeSelection")
-    selction.style.display = "flex"
-}
-function desAfficherSelectionCommun(){
-    let selction = document.querySelector(".communeSelection")
-    selction.style.display = "none"
-}
+const slider = document.querySelector('.sliderShow')
 
-function afficherSelectionStockage(){
-    let selction = document.querySelector(".stockageSelection")
-    selction.style.display = "flex"
-}
-function desAfficherSelectionStockage(){
-    let selction = document.querySelector(".stockageSelection")
-    selction.style.display = "none"
-}
+const prev = document.getElementById('prev')
+const next = document.getElementById('next')
 
-function afficherSelectionReunion(){
-    let selction = document.querySelector(".reunionSelection")
-    selction.style.display = "flex"
-}
-function desAfficherSelectionReunion(){
-    let selction = document.querySelector(".reunionSelection")
-    selction.style.display = "none"
-}
+let currentTranslate = -0
 
-function afficherSelectionMedicale(){
-    let selction = document.querySelector(".medicaleSelection")
-    selction.style.display = "flex"
-}
-function desAfficherSelectionMedicale(){
-    let selction = document.querySelector(".medicaleSelection")
-    selction.style.display = "none"
-}
+prev.addEventListener('click', () => {
+    ++currentTranslate 
+    slider.style.transform = `translateX(${currentTranslate * 200}px)`
+    slider.style.transition = "transform 300ms ease-in-out"
+    console.log(slider.style.transform)
+})
 
-function afficherSelectionPilotage(){
-    let selction = document.querySelector(".pilotageSelection")
-    selction.style.display = "flex"
-}
-function desAfficherSelectionPilotage(){
-    let selction = document.querySelector(".pilotageSelection")
-    selction.style.display = "none"
-}
+next.addEventListener('click', () => {
+    --currentTranslate 
+    slider.style.transform = `translateX(${currentTranslate * 200}px)`
+    slider.style.transition = "transform 300ms ease-in-out"
+    console.log(slider.style.transform)
+})
 
 
-function desAfficherAllSelection(){
-    desAfficherSelectionChambreKin()
-    desAfficherSelectionChambreLizan()
-    desAfficherSelectionReacteur()
-    desAfficherSelectionCommun()
-    desAfficherSelectionStockage()
-    desAfficherSelectionReunion()
-    desAfficherSelectionMedicale()
-    desAfficherSelectionPilotage()
-}
-
-
-function addListenerSelection(){
-    let btnKin = document.getElementById("kinSelection")
-    let btnLizan = document.getElementById("lizanSelection")
-    let btnReacteur = document.getElementById("reacteurSelection")
-    let btnCommun = document.getElementById("communeSelection")
-    let btnStockage = document.getElementById("stockageSelection")
-    let btnReunion = document.getElementById("reunionSelection")
-    let btnMedicale = document.getElementById("medicaleSelection")
-    let btnPilotage = document.getElementById("pilotageSelection")
-
+for(i = 0; i < select.length; i++){
     
-    btnKin.addEventListener("pointerenter", (event) =>{
-        if(event.target === btnKin){
-            desAfficherAllSelection()
-            afficherSelectionChambreKin()
+    select[i].addEventListener("pointerenter", (event) =>{
+
+        if(event.target === select1){
+            divContent.innerHTML = ""
+
+            const div = document.createElement("div")
+            div.style.backgroundImage = "url(Ressource/Image/Vaisseau/WebP/ChambreKinSelection.webp)"
+            div.className = "overlay"
+            divContent.appendChild(div)
+
+            title.innerText = "Chambre de Kin"
         }
-    })
-    btnKin.addEventListener("pointerout", (event) =>{
-        if(event.target === btnKin){
-            desAfficherAllSelection()
+        if(event.target === select2){
+            divContent.innerHTML = ""
+
+            const div = document.createElement("div")
+            div.style.backgroundImage = "url(Ressource/Image/Vaisseau/WebP/ChambreLizanSelection.webp)"
+            div.className = "overlay"
+            divContent.appendChild(div)
+
+            title.innerText = "Chambre de Lizân"
+        }
+        if(event.target === select3){
+            divContent.innerHTML = ""
+
+            const div = document.createElement("div")
+            div.style.backgroundImage = "url(Ressource/Image/Vaisseau/WebP/CocpitePilotageSelection.webp)"
+            div.className = "overlay"
+            divContent.appendChild(div)
+
+            title.innerText = "Cocpite du vaisseau"
+        }
+        if(event.target === select4){
+            divContent.innerHTML = ""
+
+            const div = document.createElement("div")
+            div.style.backgroundImage = "url(Ressource/Image/Vaisseau/WebP/LieuReunionSelection.webp)"
+            div.className = "overlay"
+            divContent.appendChild(div)
+
+            title.innerText = "Lieu de réunion du vaisseau"
+        }
+        if(event.target === select5){
+            divContent.innerHTML = ""
+
+            const div = document.createElement("div")
+            div.style.backgroundImage = "url(Ressource/Image/Vaisseau/WebP/ReacteurSelection.webp)"
+            div.className = "overlay"
+            divContent.appendChild(div)
+
+            title.innerText = "Réacteur du vaisseau et chambre de 4M"
+        }
+        if(event.target === select6){
+            divContent.innerHTML = ""
+
+            const div = document.createElement("div")
+            div.style.backgroundImage = "url(Ressource/Image/Vaisseau/WebP/ZoneCommuneSelection.webp)"
+            div.className = "overlay"
+            divContent.appendChild(div)
+
+            title.innerText = "Zone de vie commune et chambre de Alourra"
+        }
+        if(event.target === select7){
+            divContent.innerHTML = ""
+
+            const div = document.createElement("div")
+            div.style.backgroundImage = "url(Ressource/Image/Vaisseau/WebP/ZoneMedicaleSelection.webp)"
+            div.className = "overlay"
+            divContent.appendChild(div)
+
+            title.innerText = "Baie médicale du vaisseau"
+        }
+        if(event.target === select8){
+            divContent.innerHTML = ""
+
+            const div = document.createElement("div")
+            div.style.backgroundImage = "url(Ressource/Image/Vaisseau/WebP/ZonesStockageSelection.webp)"
+            div.className = "overlay"
+            divContent.appendChild(div)
+
+            title.innerText = "Zone de stockage du vaisseau et chambre de Nix"
         }
     })
 
-    btnLizan.addEventListener("pointerenter", (event) =>{
-        if(event.target === btnLizan){
-            desAfficherAllSelection()
-            afficherSelectionChambreLizan()
-        }
-    })
-    btnLizan.addEventListener("pointerout", (event) =>{
-        if(event.target === btnLizan){
-            desAfficherAllSelection()
-        }
-    })
+    select[i].addEventListener("pointerout", () =>{
+        divContent.innerHTML = ""
 
-    btnReacteur.addEventListener("pointerenter", (event) =>{
-        if(event.target === btnReacteur){
-            desAfficherAllSelection()
-            afficherSelectionReacteur()
-        }
+        title.innerText = "zone du vaisseau"
     })
-    btnReacteur.addEventListener("pointerout", (event) =>{
-        if(event.target === btnReacteur){
-            desAfficherAllSelection()
-        }
-    })
-
-    btnCommun.addEventListener("pointerenter", (event) =>{
-        if(event.target === btnCommun){
-            desAfficherAllSelection()
-            afficherSelectionCommun()
-        }
-    })
-    btnCommun.addEventListener("pointerout", (event) =>{
-        if(event.target === btnCommun){
-            desAfficherAllSelection()
-        }
-    })
-
-    btnStockage.addEventListener("pointerenter", (event) =>{
-        if(event.target === btnStockage){
-            desAfficherAllSelection()
-            afficherSelectionStockage()
-        }
-    })
-    btnStockage.addEventListener("pointerout", (event) =>{
-        if(event.target === btnStockage){
-            desAfficherAllSelection()
-        }
-    })
-
-    btnReunion.addEventListener("pointerenter", (event) =>{
-        if(event.target === btnReunion){
-            desAfficherAllSelection()
-            afficherSelectionReunion()
-        }
-    })
-    btnReunion.addEventListener("pointerout", (event) =>{
-        if(event.target === btnReunion){
-            desAfficherAllSelection()
-        }
-    })
-
-    btnMedicale.addEventListener("pointerenter", (event) =>{
-        if(event.target === btnMedicale){
-            desAfficherAllSelection()
-            afficherSelectionMedicale()
-        }
-    })
-    btnMedicale.addEventListener("pointerout", (event) =>{
-        if(event.target === btnMedicale){
-            desAfficherAllSelection()
-        }
-    })
-
-    btnPilotage.addEventListener("pointerenter", (event) =>{
-        if(event.target === btnPilotage){
-            desAfficherAllSelection()
-            afficherSelectionPilotage()
-        }
-    })
-    btnPilotage.addEventListener("pointerout", (event) =>{
-        if(event.target === btnPilotage){
-            desAfficherAllSelection()
-        }
-    })
-
 }
 
 function selectionChoix(){
@@ -276,5 +211,4 @@ function selectionChoix(){
 
 }
 
-addListenerSelection()
 selectionChoix()

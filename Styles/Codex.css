@@ -38,11 +38,11 @@ main{
     background-color: rgba(128, 128, 128, 0.2);
     height: 50px;
     width: 200px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     font-weight: 400;
     font-size: 1.2em; 
     text-align: center;
-    transition: background-color 500ms;
+    transition: background-color 500ms ease-in-out;
 }
 .choix:hover{
     background-color: rgba(192, 192, 192, 0.4) ;
@@ -54,17 +54,51 @@ main{
     margin-bottom: 20px;
 }
 
+.content-Perso{
+    overflow: hidden;
+    max-height: 480px;
+}
+
+.content-Best{
+    overflow: hidden;
+    max-height: 200px;
+}
+
+.content-Resumer{
+    overflow: hidden;
+    max-height: 100px;
+}
+
 .choixPersonnage{
     display: none;
     flex-direction: column;
+    animation: 600ms ease-in-out activePerso;
 }
+
 .choixBestiaire{
     display: none;
     flex-direction: column;
+    animation: 500ms ease-in-out activeBest;
 }
 .choixResumer{
     display: none;
     flex-direction: column;
+    animation: 400ms ease-in-out activeResumer;
+}
+
+@keyframes activePerso {
+    from{transform: translateY(-400px); opacity: 0;}
+    to{transform: translateY(0px); opacity: 1;}
+}
+
+@keyframes activeBest {
+    from{transform: translateY(-200px); opacity: 0;}
+    to{transform: translateY(0px); opacity: 1;}
+}
+
+@keyframes activeResumer {
+    from{transform: translateY(-100px); opacity: 0;}
+    to{transform: translateY(0px); opacity: 1;}
 }
 
 .choixSecondaire{
@@ -72,11 +106,13 @@ main{
     margin-top: 5px;
     font-weight: 200;
     font-size: 1.05em; 
-    transition: background-color 300ms;
+    cursor: pointer;
+    transition: background-color 300ms ease-in-out;
 }
 .choixSecondaire:hover{
     background-color: rgba(128, 128, 128, 0.6) ;
 }
+
 
 #republique{
     color: rgb(88, 88, 255);
@@ -101,17 +137,23 @@ main{
     font-size: 1.1em; 
 }
 
+.elementInfo{
+    box-sizing: border-box;
+}
+
 .elementInfo h2{
     color: rgb(255, 196, 0);
     font-size: 30px;
     margin-top: 0px;
     margin-bottom: 50px;
+    animation: 1s ease-in-out appInfo;
 }
 
 .elementInfo p{
     color: white;
     font-size: 20px;
     text-justify: auto;
+    animation: 1s ease-in-out appInfo;
 }
 
 .image_et_info{
@@ -119,6 +161,12 @@ main{
     flex-direction: row;
     gap: 25px;
     margin-bottom: 50px;
+    animation: 1s ease-in-out appInfo;
+}
+
+@keyframes appInfo {
+    from{opacity: 0;}
+    to{opacity: 1;}
 }
 
 #open{ 

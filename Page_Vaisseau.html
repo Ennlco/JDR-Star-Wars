@@ -18,6 +18,8 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Anta&display=swap" rel="stylesheet">
 
+        <script src="https://kit.fontawesome.com/3a62503aaf.js" crossorigin="anonymous"></script>
+        
         <script src="JavaScript/Vaisseau/Vaisseau.js" defer></script>
         <script src="JavaScript/menu_Nav_Mobile.js" defer></script>
 
@@ -48,52 +50,42 @@
 
         <main>
             <section class="vueGlobal">
-                <div>
-                    <div class="contourZone">
-                        <img src="Ressource/Image/Vaisseau/ChambreKin.png" alt="Chambre kin" class="vaisseauZone Kin" id="kinSelection">
-                        <p>Chambre de Kin</p>
-                    </div>
-                    <div class="contourZone">
-                        <img src="Ressource/Image/Vaisseau/ChambreLizan.png" alt="Chambre de Lizan" class="vaisseauZone Lizan"  id="lizanSelection">
-                        <p>Chambre de lizân</p>
-                    </div>
-                    <div class="contourZone">
-                        <img src="Ressource/Image/Vaisseau/Reacteur.png" alt="Reacteur" class="vaisseauZone Reacteur"  id="reacteurSelection">
-                        <p>Réacteur du vaisseau <br> et chambre de 4M</p>
-                    </div>
-                    <div class="contourZone">
-                        <img src="Ressource/Image/Vaisseau/ZoneCommune.png" alt="Zone Commune" class="vaisseauZone Commune"  id="communeSelection">
-                        <p>Zone de vie commune et chambre de Alourra</p>
-                    </div>
+                <div class="text-Content">
+                    <h1>Choisissez votre zone</h1>
+                    <span class="nameZone">zone du vaisseau</span>
                 </div>
-                <div>
-                    <img src="Ressource/Image/Vaisseau/VaisseauGlobal.jpg" alt="intérieur Vaisseau cargo" class="carteVaisseau">
-                    <img src="Ressource/Image/Vaisseau/ChambreKinSelection.png" alt="Chambre Kin Selection" class="kinSelection">
-                    <img src="Ressource/Image/Vaisseau/ChambreLizanSelection.png" alt="Chambre Lizân Selection" class="lizanSelection">
-                    <img src="Ressource/Image/Vaisseau/ReacteurSelection.png" alt="Zone Réacteur Selection" class="reacteurSelection">
-                    <img src="Ressource/Image/Vaisseau/ZoneCommuneSelection.png" alt="Zone Commune Selection" class="communeSelection">
-                    <img src="Ressource/Image/Vaisseau/ZonesStockageSelection.png" alt="Zone Stockage Selection" class="stockageSelection">
-                    <img src="Ressource/Image/Vaisseau/LieuReunionSelection.png" alt="Lieu Réunion Selection" class="reunionSelection">
-                    <img src="Ressource/Image/Vaisseau/ZoneMedicaleSelection.png" alt="Baie Médicale Selection" class="medicaleSelection">
-                    <img src="Ressource/Image/Vaisseau/CocpitePilotageSelection.png" alt="Cocpite Pilotage Selection" class="pilotageSelection">
+                <div class="img-content">
+    
                 </div>
-                <div>
-                    <div class="contourZone">
-                        <img src="Ressource/Image/Vaisseau/ZonesStockage.png" alt="Stockage" class="vaisseauZone Stockage"  id="stockageSelection">
-                        <p>Zone de stockage du vaisseau et chambre de Nix</p>
+                <div class="gallery-content">
+                    <div class="sliderShow">
+                        <div class="slide s1" id="1">
+    
+                        </div>
+                        <div class="slide s2" id="2">
+                            
+                        </div>
+                        <div class="slide s3" id="3">
+                            
+                        </div>
+                        <div class="slide s4" id="4">
+                            
+                        </div>
+                        <div class="slide s5" id="5">
+                            
+                        </div>
+                        <div class="slide s6" id="6">
+                            
+                        </div>
+                        <div class="slide s7" id="7">
+                            
+                        </div>
+                        <div class="slide s8" id="8">
+                            
+                        </div>
                     </div>
-                    <div class="contourZone">
-                        <img src="Ressource/Image/Vaisseau/LieuReunion.png" alt="Lieu de réunion" class="vaisseauZone Reunion"  id="reunionSelection">
-                        <p>Lieu de réunion du vaisseau</p>
-                    </div>
-                    <div class="contourZone">
-                        <img src="Ressource/Image/Vaisseau/ZoneMedicale.png" alt="Baie médicale" class="vaisseauZone Medicale"  id="medicaleSelection">
-                        <p>Baie médicale du vaisseau</p>
-                    </div>
-                    <div class="contourZone">
-                        <img src="Ressource/Image/Vaisseau/CocpitePilotage.png" alt="Cocpite" class="vaisseauZone Pilotage"  id="pilotageSelection">
-                        <p>Cocpite du vaisseau</p>
-                    </div>
+                    <button type="button" id="prev"><i class="fa-solid fa-chevron-left"></i></button>
+                    <button type="button" id="next"><i class="fa-solid fa-chevron-right"></i></button>
                 </div>
             </section>
             <section class="vueGlobalMobile">
