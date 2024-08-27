@@ -52,20 +52,20 @@ footer{
 
 }
 
-.barre1, .barre6, .barre11, .barre16, .barre21, .barre26, .barre31, .barre36 {
-    animation: 2.5s linear 0s infinite alternate barreMove;
+.barre0, .barre5, .barre10, .barre15, .barre20, .barre25, .barre30, .barre35 {
+    animation: 2.5s ease-in-out 0s infinite alternate barreMove;
+}
+.barre1, .barre6, .barre11, .barre16, .barre21, .barre26, .barre31, .barre36{
+    animation: 1.5s ease-in-out 0s infinite alternate barreMove;
 }
 .barre2, .barre7, .barre12, .barre17, .barre22, .barre27, .barre32, .barre37{
-    animation: 1.5s linear 0s infinite alternate barreMove;
+    animation: 1s ease-in-out 0s infinite alternate barreMove;
 }
 .barre3, .barre8, .barre13, .barre18, .barre23, .barre28, .barre33, .barre38{
-    animation: 1s linear 0s infinite alternate barreMove;
+    animation: 1.5s ease-in-out 0s infinite alternate barreMove;
 }
 .barre4, .barre9, .barre14, .barre19, .barre24, .barre29, .barre34, .barre39{
-    animation: 1.5s linear 0s infinite alternate barreMove;
-}
-.barre5, .barre10, .barre15, .barre20, .barre25, .barre30, .barre35, .barre40{
-    animation: 2s linear 0s infinite alternate barreMove;
+    animation: 2s ease-in-out 0s infinite alternate barreMove;
 }
 
 @keyframes barreMove{
