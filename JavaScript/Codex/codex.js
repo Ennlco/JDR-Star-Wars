@@ -135,7 +135,7 @@ function choixInfoPersoRep(){
     for(i = 0; i < choix.length; i++){
         choix[i].addEventListener("click", (event) => {
             let clickId = event.target.id
-
+            divBase.style.display = "flex"
             divBase.innerHTML = ""
 
             let h2 = document.createElement("h2")
