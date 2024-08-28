@@ -134,77 +134,72 @@ function selectionChoix(){
     select.addEventListener("change", () =>{
         let selectValue = select.value
 
+        if(selectValue == ""){
+            divBase.innerHTML = ""
+        }
         if(selectValue == "1"){
             divBase.innerHTML = ""
 
-            const img = document.createElement("img")
-            img.src = "Ressource/Image/Vaisseau/ChambreKinSelection.png"
-            img.alt = "Chambre kin"
-            img.className = "imgSelect"
-            divBase.appendChild(img)
+            const divE = document.createElement("div")
+            divE.style.backgroundImage = "url(Ressource/Image/Vaisseau/WebP/ChambreKinSelection.webp)"
+            divE.className = "overlay"
+            divBase.appendChild(divE)
         }
         if(selectValue == "2"){
             divBase.innerHTML = ""
 
-            const img = document.createElement("img")
-            img.src = "Ressource/Image/Vaisseau/ChambreLizanSelection.png"
-            img.alt = "Chambre Lizân"
-            img.className = "imgSelect"
-            divBase.appendChild(img) 
+            const divE = document.createElement("div")
+            divE.style.backgroundImage = "url(Ressource/Image/Vaisseau/WebP/ChambreLizanSelection.webp)"
+            divE.className = "overlay"
+            divBase.appendChild(divE)
         }
         if(selectValue == "3"){
             divBase.innerHTML = ""
 
-            const img = document.createElement("img")
-            img.src = "Ressource/Image/Vaisseau/ReacteurSelection.png"
-            img.alt = "Zone Réacteur et chambre de 4M"
-            img.className = "imgSelect"
-            divBase.appendChild(img) 
+            const divE = document.createElement("div")
+            divE.style.backgroundImage = "url(Ressource/Image/Vaisseau/WebP/ReacteurSelection.webp)"
+            divE.className = "overlay"
+            divBase.appendChild(divE)
         }
         if(selectValue == "4"){
             divBase.innerHTML = ""
 
-            const img = document.createElement("img")
-            img.src = "Ressource/Image/Vaisseau/ZoneCommuneSelection.png"
-            img.alt = "Zone Commune et chambre de Alourra"
-            img.className = "imgSelect"
-            divBase.appendChild(img) 
+            const divE = document.createElement("div")
+            divE.style.backgroundImage = "url(Ressource/Image/Vaisseau/WebP/ZoneCommuneSelection.webp)"
+            divE.className = "overlay"
+            divBase.appendChild(divE)
         }
         if(selectValue == "5"){
             divBase.innerHTML = ""
 
-            const img = document.createElement("img")
-            img.src = "Ressource/Image/Vaisseau/ZonesStockageSelection.png"
-            img.alt = "Zone Stockage et chambre de Nix"
-            img.className = "imgSelect"
-            divBase.appendChild(img) 
+            const divE = document.createElement("div")
+            divE.style.backgroundImage = "url(Ressource/Image/Vaisseau/WebP/ZonesStockageSelection.webp)"
+            divE.className = "overlay"
+            divBase.appendChild(divE)
         }
         if(selectValue == "6"){
             divBase.innerHTML = ""
 
-            const img = document.createElement("img")
-            img.src = "Ressource/Image/Vaisseau/LieuReunionSelection.png"
-            img.alt = "Lieu Réunion"
-            img.className = "imgSelect"
-            divBase.appendChild(img) 
+            const divE = document.createElement("div")
+            divE.style.backgroundImage = "url(Ressource/Image/Vaisseau/WebP/LieuReunionSelection.webp)"
+            divE.className = "overlay"
+            divBase.appendChild(divE)
         }
         if(selectValue == "7"){
             divBase.innerHTML = ""
 
-            const img = document.createElement("img")
-            img.src = "Ressource/Image/Vaisseau/ZoneMedicaleSelection.png"
-            img.alt = "Baie Médicale"
-            img.className = "imgSelect"
-            divBase.appendChild(img) 
+            const divE = document.createElement("div")
+            divE.style.backgroundImage = "url(Ressource/Image/Vaisseau/WebP/ZoneMedicaleSelection.webp)"
+            divE.className = "overlay"
+            divBase.appendChild(divE)
         }
         if(selectValue == "8"){
             divBase.innerHTML = ""
 
-            const img = document.createElement("img")
-            img.src = "Ressource/Image/Vaisseau/CocpitePilotageSelection.png"
-            img.alt = "Cocpite Pilotage"
-            img.className = "imgSelect"
-            divBase.appendChild(img) 
+            const divE = document.createElement("div")
+            divE.style.backgroundImage = "url(Ressource/Image/Vaisseau/WebP/CocpitePilotageSelection.webp)"
+            divE.className = "overlay"
+            divBase.appendChild(divE)
         }
     })
     

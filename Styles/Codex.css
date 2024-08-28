@@ -149,6 +149,12 @@ main{
     border-radius: 5px;
 }
 
+.elementInfo h1{
+    color: rgb(255, 196, 0);
+    font-size: 30px;
+    animation: 1s ease-in-out appInfo;
+}
+
 .elementInfo h2{
     color: rgb(255, 196, 0);
     font-size: 30px;
@@ -400,7 +406,7 @@ input[type="file"] + .labelFilePDF{
 
 @media screen and (max-width: 450px) {
     main{
-        min-height: 660px;
+        min-height: 520px;
     }
 
     .barreChoix{
@@ -428,6 +434,23 @@ input[type="file"] + .labelFilePDF{
         flex-direction: column;
         margin-top: 10px;
         padding: 0px;
+    }
+
+    .optionSecondaire{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .optionSecondaire select{
+        width: 100%;
+        padding: 10px;
+        background-color: rgba(0, 0, 0, 0.5);
+        border: 1px solid darkgoldenrod;
+        color: goldenrod;
+    }
+    .optionSecondaire option{
+        background-color: black;
     }
 
     .modaleAdd{
@@ -461,5 +484,22 @@ input[type="file"] + .labelFilePDF{
         flex-direction: column;
         align-items: center;
         width: 90%;
+    }
+
+    .elementInfo{
+        width: 100%;
+        margin-top: 15px;
+        padding-left: 0px;
+        padding: 5px;
+        border: none;
+    }
+
+    .elementInfo h2{
+        margin-bottom: 15px;
+    }
+
+    .image_et_info{
+        flex-direction: column;
+        margin-bottom: 20px;
     }
 }

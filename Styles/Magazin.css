@@ -324,9 +324,6 @@ p{
 }
 
 
-@media screen and (max-width: 1024px){
-}
-
 @media screen and (max-width: 500px){
     .shopMenu{
         display: none;
@@ -345,6 +342,22 @@ p{
         border-radius: 5px;
         color: goldenrod;
         font-family: "Anta", sans-serif;
+    }
+
+    .chooseCat{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .chooseCat select{
+        width: 80%;
+    }
+
+    .max-min{
+        flex-direction: column;
+        gap: 20px;
     }
 
     .choixShop{
