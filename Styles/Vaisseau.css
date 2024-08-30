@@ -190,7 +190,7 @@ h2{
     }
 
     .vueGlobalMobile div{
-        width: 100%;
+        width: 349px;
         height: 277px;
         background-image: url(../Ressource/Image/Vaisseau/VaisseauGlobal.jpg);
         background-size: contain;
