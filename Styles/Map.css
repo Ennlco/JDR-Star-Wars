@@ -1,0 +1,128 @@
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.caontent-all{
+    display: flex;
+    justify-content: space-around;
+    margin: 30px 0px;
+}
+
+.contour{
+    border: 1px solid aqua;
+    border-radius: 10px;
+}
+
+.content_map, .widget{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    width: 20%;
+    height: 100%;
+    min-height: 100px;
+}
+
+.border_content_top, .border_content_down{
+    position: relative;
+    width: 100%;
+    height: 3%;
+}
+
+.border_content_top, .border_content_fight_top{
+    top: 0px;
+}
+.border_content_down, .border_content_fight_down{
+    bottom: 0px;
+    rotate: 180deg;
+}
+
+.img_border{
+    width: 100%;
+}
+
+.img_border_fight{
+    width: 100%;
+    height: 40px;
+}
+
+.last_map_content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    padding: 5px;
+    gap: 10px;
+}
+
+.content_old_map{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    gap: 10px;
+}
+
+.content_old_map:hover{
+    transform: scale(1.02);
+}
+
+
+.img_map{
+    width: 50px;
+    height: 100%;
+    background-color: white;
+    border-radius: 10px 0px 0px 10px;
+}
+.name_map{
+    color: white;
+}
+
+.now_map{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 300px;
+    padding: 5px;
+}
+.load_map{
+    width: 90%;
+    height: 100%;
+    background-color: brown;
+    margin: 0px auto;
+}
+
+.initiative_fight{
+    display: flex;
+    flex-direction: row;
+    height: 80px;
+    padding: 5px;
+    gap: 10px;
+}
+
+.initiative{
+    height: 100%;
+    width: 60px;
+}
+
+.initiative:hover{
+    transform: scale(1.02);
+}
+
+.img_token{
+    height: 90%;
+    width: 100%;
+    background-color: yellow;
+    border-radius: 10px 10px 0px 0px;
+}
+.life{
+    height: 10%;
+    width: 100%;
+    background-color: green;
+    border-radius: 0px 0px 10px 10px;
+}
